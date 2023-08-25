@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.button {
+  display: inline-block;
+  width: myrem(202);
+  position: relative;
+  font-size: myrem(14);
+  color: $white;
+  font-family: $english-font-family;
+  font-weight: $regular;
+  background-color: $green;
+  padding-top: myrem(16);
+  padding-left: myrem(40);
+  padding-bottom: myrem(16);
+}
+
+.button::before {
+  content: "";
+  display: inline-block;
+  border: myrem(1) solid $green;
+  width: myrem(202);
+  height: myrem(54);
+  position: absolute;
+  top: myrem(4);
+  left: myrem(4);
+  z-index: -1;
+}
+
+.button::after {
+  content: "";
+  display: inline-block;
+  width: myrem(40);
+  height: myrem(8);
+  border-bottom: myrem(1) solid $white;
+  border-right: myrem(1) solid $white;
+  position: absolute;
+  top: 35%;
+  transform: skew(45deg);
+  margin-left: myrem(8);
+}
