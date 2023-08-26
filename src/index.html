@@ -29,18 +29,103 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
-
-  </header>
+  <header class="header js-header">
+    <div class="header__inner">
+      <div class="header__box">
+        <h1 class="header__logo logo">
+          <a href="/">
+            <img src="./assets/images/common/logo.svg" alt="CodeUps">
+          </a>
+        </h1>
+        <!-- ハンバーガーメニュー -->
+        <button class="header__hamburger hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- PCメニュー -->
+        <nav class="header__nav pc-nav u-desktop">
+          <ul class="pc-nav__items">
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Campaign</span>
+                <span class="header-link__subtitle">キャンペーン</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">About us</span>
+                <span class="header-link__subtitle">私たちについて</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Information</span>
+                <span class="header-link__subtitle">ダイビング情報</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Blog</span>
+                <span class="header-link__subtitle">ブログ</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Voice</span>
+                <span class="header-link__subtitle">お客様の声</span>
+              </a>
+            </li>
+            <li class="pc-nav__item pc-nav__item--white">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Price</span>
+                <span class="header-link__subtitle">料金一覧</span>
+              </a>
+            </li>
+            <li class="pc-nav__item pc-nav__item--white">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">FAQ</span>
+                <span class="header-link__subtitle">よくある質問</span>
+              </a>
+            </li>
+            <li class="pc-nav__item">
+              <a href="#" class="pc-nav__link header-link">
+                <span class="header-link__title">Contact</span>
+                <span class="header-link__subtitle">お問合せ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- SPメニュー -->
+    <nav class="header__drawer sp-nav js-drawer">
+      <ul class="sp-nav__items">
+        <li class="sp-nav__item"><a href="#">トップ</a></li>
+        <li class="sp-nav__item"><a href="#">お知らせ</a></li>
+        <li class="sp-nav__item"><a href="#">事業内容</a></li>
+        <li class="sp-nav__item"><a href="#">制作実績</a></li>
+        <li class="sp-nav__item"><a href="#">企業概要</a></li>
+        <li class="sp-nav__item"><a href="#">ブログ</a></li>
+        <li class="sp-nav__item"><a href="#">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    </header>
   <main>
 
+    <div class="space" style="margin-top: 100px;"></div>
 
     <!-- 共通パーツ -->
     <!-- ボタン -->
     <a href="#" class="button">View more</a>
 
-    <!-- ヘッダー項目 -->
+    <div class="space" style="margin-top: 50px;"></div>
 
+    <!-- ヘッダー項目 -->
+    <a href="#" class="header-link">
+      <span class="header-link__title">Campaign</span>
+      <span class="header-link__subtitle">キャンペーン</span>
+    </a>
   </main>
   <footer>
 

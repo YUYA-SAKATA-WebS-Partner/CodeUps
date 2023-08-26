@@ -12,6 +12,8 @@
   padding-top: myrem(16);
   padding-left: myrem(40);
   padding-bottom: myrem(16);
+  border: myrem(1) solid $green;
+  transition: color .3s, background-color .3s;
 }
 
 .button::before {
@@ -37,4 +39,17 @@
   top: 35%;
   transform: skew(45deg);
   margin-left: myrem(8);
+  transition: border .3s;
+}
+
+.button:hover {
+  color: $green;
+  background-color: $white;
+  border: myrem(1) solid $green;
+}
+
+.button:hover::after {
+  // border-bottom: myrem(1) solid $white;
+  // border-right: myrem(1) solid $white;
+  border-color: $green;
 }

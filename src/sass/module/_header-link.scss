@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.header-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 myrem(20);
+}
+
+.header-link__title {
+  display: block;
+  font-size: myrem(18);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  font-family: $english-font-family;
+}
+
+.header-link__subtitle {
+  display: block;
+  font-size: myrem(10);
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  margin-top: myrem(4);
+}
+
