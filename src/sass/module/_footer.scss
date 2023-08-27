@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.footer {
+  background-color: $green;
+  padding-top: myrem(48);
+  padding-bottom: myrem(56);
+}
+
+// .footer__inner {
+//   padding: 0 myrem(15);
+//   @include mq(md) {
+//     padding: 0 myrem(25);
+//   }
+// }
+
+.footer__header {
+
+}
+
+.footer__logo {
+  width: myrem(120);
+  @include mq(md) {
+    width: myrem(200);
+  }
+}
+
+.footer__icons {
+  display: flex;
+  gap: myrem(16);
+  margin-top: myrem(16);
+}
+
+.footer__icon {
+  width: myrem(24);
+}
+
+.footer__nav {
+  margin-top: myrem(28);
+}
+
+.footer__copyright {
+  margin-top: myrem(40);
+  padding: 0 myrem(14);
+  text-align: center;
+}
+
+.footer__copyright span {
+  font-size: myrem(12);
+  font-weight: $regular;
+  font-family: $english-font-family;
+  color: $white;
+}

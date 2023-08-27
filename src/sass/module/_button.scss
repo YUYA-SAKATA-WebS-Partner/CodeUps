@@ -49,7 +49,5 @@
 }
 
 .button:hover::after {
-  // border-bottom: myrem(1) solid $white;
-  // border-right: myrem(1) solid $white;
   border-color: $green;
 }

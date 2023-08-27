@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.section-title {
+  text-align: center;
+}
+
+.section-title__main {
+  font-size: myrem(32);
+  font-weight: $regular;
+  font-family: $english-font-family;
+  color: $black;
+  @include mq(md) {
+    font-size: myrem(40);
+  }
+}
+
+.section-title__main::first-letter {
+  color: $green;
+}
+
+.section-title__sub {
+  font-size: myrem(12);
+  font-weight: $regular;
+  color: $green;
+  margin-top: myrem(4);
+}
+

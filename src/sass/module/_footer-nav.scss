@@ -1,33 +1,29 @@
 @use "global" as *;
 
-.sp-nav {
-  opacity: 0;
-  visibility: hidden;
-  overflow: scroll;
-  background-color: $green;
-  transition: opacity .3s, visibility .3s;
-}
-
-.sp-nav.is-active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.sp-nav__inner {
-  padding: 0 myrem(15);
-}
-
-.sp-nav__box {
+.footer-nav {
   display: flex;
-  gap: myrem(7);
-  padding-top: myrem(92);
+  gap: myrem(16);
+  @include mq(md) {
+    gap: myrem(120);
+  }
 }
 
-.sp-nav__items {
-  width: calc(100% * calc(166 / 345));
+.footer-nav__box {
+  display: block;
+  @include mq(md) {
+    display: flex;
+    gap: myrem(120);
+  }
 }
 
-.sp-nav__item>a {
+.footer-nav__items:nth-child(n+2) {
+  margin-top: myrem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.footer-nav__item>a {
   position: relative;
   display: inline-block;
   font-size: myrem(16);
@@ -39,11 +35,11 @@
   padding-left: myrem(22);
 }
 
-.sp-nav__item:not(:first-child)>a {
+.footer-nav__item:not(:first-child)>a {
   margin-top: myrem(16);
 }
 
-.sp-nav__item>a::before {
+.footer-nav__item>a::before {
   content: "";
   display: block;
   width: myrem(18);
@@ -56,11 +52,11 @@
   left: 0;
 }
 
-.sp-nav__sub-items {
+.footer-nav__sub-items {
   padding-left: myrem(22);
 }
 
-.sp-nav__sub-item>a {
+.footer-nav__sub-item>a {
   display: inline-block;
   font-size: myrem(16);
   font-weight: $regular;
