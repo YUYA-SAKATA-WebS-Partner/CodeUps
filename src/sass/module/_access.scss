@@ -1,0 +1,58 @@
+@use "global" as *;
+
+
+.access__logo {
+  text-align: center;
+  padding-bottom: myrem(6);
+  border-bottom: myrem(1) solid $green;
+}
+
+.access__logo img {
+  width: myrem(174);
+  margin: 0 auto;
+  @include mq(md) {
+    width: myrem(200);
+  }
+}
+
+.access__body {
+  @include mq(md) {
+    display: flex;
+    gap: myrem(21);
+  }
+}
+
+.access__box {
+  margin-top: myrem(16);
+  text-align: center;
+  @include mq(md) {
+    width: calc(100% * calc(146 / 440));
+  }
+}
+
+.access__text {
+  font-size: myrem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+.access__text:not(:first-child) {
+  margin-top: myrem(4);
+}
+
+.access__map {
+  aspect-ratio: 295 / 160;
+  margin-top: myrem(16);
+  text-align: center;
+  @include mq(md) {
+    width: calc(100% * calc(273 / 440));
+  }
+}
+
+.access__map iframe {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.text-card {
+  padding: myrem(16) myrem(16) myrem(24);
+  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+  @include mq(md) {
+    padding: myrem(24);
+  }
+}
+
+.text-card__header {
+  display: flex;
+  align-items: flex-end;
+  gap: myrem(13);
+  @include mq(md) {
+    gap: myrem(16);
+  }
+}
+
+.text-card__box {
+  width: calc(100% * calc(149 / 313));
+  @include mq(md) {
+    width: calc(100% * calc(276 / 472));
+  }
+}
+
+.text-card__meta {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.text-card__age {
+  font-size: myrem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+.text-card__title {
+  font-size: myrem(16);
+  font-weight: $medium;
+  color: $black;
+  border-bottom: myrem(1) solid $green;
+  margin-top: myrem(4);
+  padding-bottom: myrem(4);
+  @include mq(md) {
+    font-size: myrem(24);
+  }
+}
+
+.text-card__image {
+  aspect-ratio: 151 / 117;
+  width: calc(100% * calc(151 / 313));
+  @include mq(md) {
+    aspect-ratio: 180 / 140;
+    width: calc(100% * calc(180 / 472));
+  }
+}
+
+.text-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-card__body {
+  margin-top: myrem(15);
+  @include mq(md) {
+    margin-top: myrem(40);
+  }
+}

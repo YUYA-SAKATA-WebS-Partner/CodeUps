@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.card {
+  padding: myrem(16) myrem(16) myrem(24);
+  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+}
+
+.card__image {
+  aspect-ratio: 301 / 201;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__body {
+  margin-top: myrem(24);
+}
+
+.card__date {
+  font-size: myrem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
+  font-family: $english-font-family;
+}
+
+.card__title {
+  font-size: myrem(16);
+  font-weight: $medium;
+  line-height: 1.5;
+  color: $black;
+  margin-top: myrem(4);
+  padding-bottom: myrem(4);
+  border-bottom: myrem(1) solid $green;
+}
+
+.card__text {
+  margin-top: myrem(16);
+}
+
