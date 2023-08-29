@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.mainview {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mainview__image {
+  aspect-ratio: 375 /667;
+  @include mq(md) {
+    aspect-ratio: 1440 / 768;
+  }
+}
+
+.mainview__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.mainview__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.mainview__title {
+  font-size: myrem(40);
+  font-weight: $regular;
+  letter-spacing: 0.54em;
+  color: $white;
+  font-family: $sub-font-family;
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: myrem(80);
+  }
+}
+
+.mainview__subtitle {
+  font-size: myrem(20);
+  font-weight: $regular;
+  font-family: $english-font-family;
+  color: $white;
+}
+
