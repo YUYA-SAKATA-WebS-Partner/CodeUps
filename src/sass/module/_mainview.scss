@@ -6,18 +6,14 @@
   height: 100vh;
 }
 
-.mainview__image {
-  aspect-ratio: 375 /667;
-  @include mq(md) {
-    aspect-ratio: 1440 / 768;
-  }
+.mainview__slide {
+  height: inherit;
 }
 
+
 .mainview__image img {
-  width: 100%;
-  height: 100%;
+  height: inherit;
   object-fit: cover;
-  object-position: 0 50%;
 }
 
 .mainview__box {

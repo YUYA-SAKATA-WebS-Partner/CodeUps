@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.campaign {
+}
+
+.campaign__inner {
+  position: relative;
+}
+
+.campaign__title {
+
+}
+
+.campaign__panels {
+  margin-top: myrem(24);
+  padding-left: myrem(15);
+  padding-bottom: myrem(10);
+  @include mq(md) {
+    margin-top: myrem(40);
+    margin-left: myrem(165);
+  }
+}
+
+.campaign__panel {
+  width: 100%;
+  max-width: myrem(280);
+  @include mq(md) {
+    max-width: myrem(334);
+  }
+}
+
+.campaign__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: myrem(30);
+  @include mq(md) {
+    margin-top: myrem(70);
+  }
+}
+
+.campaign__button-next,
+.campaign__button-prev {
+  width: myrem(80);
+  height: myrem(80);
+}
+
+.campaign__button-prev {
+  top: 50%;
+  left: unset;
+  right: myrem(185);
+}
+
+.campaign__button-next {
+  top: 50%;
+  right: myrem(25);
+}
+
+.campaign__button-next::after,
+.campaign__button-prev::after {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  width: myrem(80);
+  height: myrem(80);
+  margin: auto;
+}
+
+.campaign__button-prev::after {
+  background-image: url(../images/common/arrow-prev.png);
+}
+
+.campaign__button-next::after {
+  background-image: url(../images/common/arrow-next.png);
+}
