@@ -3,6 +3,7 @@
 .card {
   padding: myrem(16) myrem(16) myrem(24);
   box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+  background-color: $white;
 }
 
 .card__image {

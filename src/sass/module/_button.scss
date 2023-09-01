@@ -5,17 +5,21 @@
   width: myrem(202);
   position: relative;
   z-index: 1;
-  font-size: myrem(14);
-  color: $white;
-  font-family: $english-font-family;
-  font-weight: $regular;
   background-color: $green;
   padding-top: myrem(16);
   padding-left: myrem(40);
   padding-bottom: myrem(16);
   border: myrem(1) solid $green;
-  transition: color .3s, background-color .3s;
-  box-shadow: myrem(4) myrem(4) 0 0 #fff, 4px 4px 0 1px $green;
+  transition: background-color .3s;
+}
+
+.button span {
+  font-size: myrem(14);
+  color: $white;
+  font-family: $english-font-family;
+  font-weight: $regular;
+  transition: color .3s;
+  position: static;
 }
 
 .button::before {
@@ -34,27 +38,37 @@
 
 .button::after {
   content: "";
+  position: absolute;
+  top: myrem(4);
+  left: myrem(4);
+  bottom: myrem(-4);
+  right: myrem(-4);
+  border: myrem(1) solid $green;
+  z-index: -2;
+}
+
+.button span::after {
+  content: "";
   display: inline-block;
   width: myrem(40);
   height: myrem(8);
   border-bottom: myrem(1) solid $white;
   border-right: myrem(1) solid $white;
   position: absolute;
-  top: 35%;
+  top: 40%;
   transform: skew(45deg);
   margin-left: myrem(8);
   transition: border .3s;
 }
 
-.button:hover {
+.button:hover span {
   color: $green;
-  border: myrem(1) solid $green;
 }
 
 .button:hover::before {
   transform: scale(1, 1);
 }
 
-.button:hover::after {
+.button:hover span::after {
   border-color: $green;
 }

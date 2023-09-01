@@ -25,3 +25,15 @@
   margin-top: myrem(4);
 }
 
+.section-title__main--white,
+.section-title__main--white::first-letter {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.section-title__sub--white {
+  @include mq(md) {
+    color: $white;
+  }
+}

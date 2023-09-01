@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.text-cards {
+  display: flex;
+  flex-direction: column;
+  gap: myrem(40);
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.text-cards__item {
+  width: 100%;
+  max-width: myrem(600);
+  margin: 0 auto;
+  @include mq(md) {
+    max-width: calc(calc(100% - myrem(40)) / 2);
+    margin: 0;
+  }
+}
