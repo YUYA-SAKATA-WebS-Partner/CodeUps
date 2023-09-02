@@ -42,4 +42,60 @@
   }
 }
 
+.panel__text {
+  text-align: center;
+  font-size: myrem(14);
+  font-weight: $regular;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.05em;
+  color: $black;
+  @include mq(md) {
+    font-size: myrem(16);
+    line-height: calc(24 / 16);
+  }
+}
 
+.panel__price-box {
+  display: flex;
+  gap: myrem(16);
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: myrem(8);
+  @include mq(md) {
+    gap: myrem(24);
+  }
+}
+
+.panel__price {
+  position: relative;
+  font-size: myrem(20);
+  font-weight: $bold;
+  font-family: $sub-font-family;
+  line-height: 1;
+  color: $black;
+  @include mq(md) {
+    font-size: myrem(24);
+  }
+}
+
+.panel__price::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: myrem(3);
+  background-color: $red;
+}
+
+.panel__discount {
+  font-size: myrem(32);
+  font-weight: $bold;
+  line-height: 1;
+  color: $green;
+  @include mq(md) {
+    font-size: myrem(40);
+  }
+}

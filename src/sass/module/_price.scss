@@ -1,59 +1,58 @@
 @use "global" as *;
 
-.price__text {
-  text-align: center;
-  font-size: myrem(14);
-  font-weight: $regular;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.05em;
-  color: $black;
+.price {
+  background-color: $green2;
+  padding: myrem(80) 0;
   @include mq(md) {
-    font-size: myrem(16);
-    line-height: calc(24 / 16);
+    padding: myrem(100) 0;
   }
+}
+
+.price__inner {
+
+}
+
+.price__title {
+}
+
+
+.price__body {
+  display: flex;
+  flex-direction: column;
+  gap: myrem(40);
+  margin-top: myrem(24);
+  @include mq(md) {
+    flex-direction: row-reverse;
+    gap: myrem(90);
+    margin-top: myrem(40);
+  }
+}
+
+.price__image {
+  aspect-ratio: 345 / 227;
+  @include mq(md) {
+    width: calc(calc(100% - myrem(90)) / 2);
+  }
+}
+
+.price__image img {
+  object-fit: cover;
 }
 
 .price__box {
+  width: calc(calc(100% - myrem(90)) / 2);
+}
+
+.price__list:not(:first-child) {
+  margin-top: myrem(40);
+}
+
+.price__button {
   display: flex;
-  gap: myrem(16);
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  margin-top: myrem(8);
+  margin-top: myrem(40);
   @include mq(md) {
-    gap: myrem(24);
-  }
-}
-
-.price__original {
-  position: relative;
-  font-size: myrem(20);
-  font-weight: $bold;
-  font-family: $sub-font-family;
-  line-height: 1;
-  color: $black;
-  @include mq(md) {
-    font-size: myrem(24);
-  }
-}
-
-.price__original::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  height: myrem(3);
-  background-color: $red;
-}
-
-.price__discount {
-  font-size: myrem(32);
-  font-weight: $bold;
-  line-height: 1;
-  color: $green;
-  @include mq(md) {
-    font-size: myrem(40);
+    margin-top: myrem(80);
   }
 }
