@@ -9,12 +9,24 @@
 }
 
 .price__inner {
-
+  position: relative;
 }
 
-.price__title {
+.price__inner::before {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    bottom: myrem(-45);
+    left: calc(50% - min(vw(1242, 596), myrem(621)));
+    z-index: 10;
+    display: inline-block;
+    width: myrem(437);
+    height: myrem(201);
+    background-image: url(../images/common/price-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
-
 
 .price__body {
   display: flex;
@@ -40,7 +52,10 @@
 }
 
 .price__box {
-  width: calc(calc(100% - myrem(90)) / 2);
+  width: 100%;
+  @include mq(md) {
+    width: calc(calc(100% - myrem(90)) / 2);
+  }
 }
 
 .price__list:not(:first-child) {

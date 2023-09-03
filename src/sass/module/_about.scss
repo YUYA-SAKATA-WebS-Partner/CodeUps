@@ -1,5 +1,27 @@
 @use "global" as *;
 
+.about__inner {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.about__inner::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    right: calc(50% - min(vw(1274, 612), myrem(637)));
+    bottom: myrem(-90);
+    z-index: 10;
+    display: inline-block;
+    width: myrem(194);
+    height: myrem(181);
+    background-image: url(../images/common/about-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .about__container {
   margin-top: myrem(24);
   @include mq(md) {

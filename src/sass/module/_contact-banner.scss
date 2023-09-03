@@ -11,8 +11,10 @@
 }
 
 .contact-banner__access {
-  padding-left: myrem(50);
-  padding-right: myrem(82);
+  @include mq(md) {
+    padding-left: myrem(50);
+    padding-right: myrem(82);
+  }
 }
 
 .contact-banner__contact {

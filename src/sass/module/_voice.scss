@@ -1,5 +1,37 @@
 @use "global" as *;
 
+.voice__inner {
+  position: relative;
+}
+
+.voice__inner::before,
+.voice__inner::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.voice__inner::before {
+  top: myrem(-120);
+  left: calc(50% - min(vw(1260, 595), myrem(620)));
+  width: myrem(301);
+  height: myrem(138);
+  background-image: url(../images/common/voice-bg.webp);
+}
+
+.voice__inner::after {
+  bottom: myrem(-62);
+  right: myrem(25);
+  width: myrem(71);
+  height: myrem(162);
+  background-image: url(../images/common/voice-bg2.webp);
+}
+
 .voice__cards {
   margin-top: myrem(40);
   @include mq(md) {

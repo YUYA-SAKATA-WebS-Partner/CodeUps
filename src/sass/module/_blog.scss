@@ -22,6 +22,26 @@
   background-position: center center;
 }
 
+.blog__inner {
+  position: relative;
+}
+
+.blog__inner::before {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    top: myrem(-75);
+    left: calc(50% - min(vw(1242, 596), myrem(621)));
+    z-index: 10;
+    display: inline-block;
+    width: myrem(437);
+    height: myrem(201);
+    background-image: url(../images/common/blog-bgfish.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .blog__body {
   margin: myrem(24) auto 0;
   display: flex;
@@ -53,12 +73,3 @@
     margin-top: myrem(80);
   }
 }
-
-.card {
-
-}
-
-.card__image {
-
-}
-

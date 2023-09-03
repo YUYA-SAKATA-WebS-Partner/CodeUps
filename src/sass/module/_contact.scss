@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.contact__inner {
+  position: relative;
+}
+
+.contact__inner::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    top: myrem(-40);
+    right: calc(50% - min(vw(1340, 645), myrem(670)));
+    z-index: 10;
+    display: inline-block;
+    width: myrem(301);
+    height: myrem(138);
+    background-image: url(../images/common/contact-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}

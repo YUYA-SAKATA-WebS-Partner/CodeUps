@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="./js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
@@ -209,7 +210,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">体験ダイビング</span>
                 <h3 class="panel__title">貸切体験ダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥24,000</p>
@@ -227,7 +228,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">体験ダイビング</span>
                 <h3 class="panel__title">ナイトダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥10,000</p>
@@ -245,7 +246,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">ファンダイビング</span>
                 <h3 class="panel__title">貸切ファンダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥20,000</p>
@@ -263,7 +264,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">ライセンス講習</span>
                 <h3 class="panel__title">ライセンス取得</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥56,000</p>
@@ -281,7 +282,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">体験ダイビング</span>
                 <h3 class="panel__title">貸切体験ダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥24,000</p>
@@ -299,7 +300,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">体験ダイビング</span>
                 <h3 class="panel__title">ナイトダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥10,000</p>
@@ -317,7 +318,7 @@
               <div class="panel__body">
                 <span class="panel__category category-tag">ファンダイビング</span>
                 <h3 class="panel__title">貸切ファンダイビング</h3>
-                <div class="panel__box price">
+                <div class="panel__box">
                   <p class="panel__text">全部コミコミ(お一人様)</p>
                   <div class="panel__price-box">
                     <p class="panel__price">¥20,000</p>
@@ -572,129 +573,43 @@
       </div>
     </section>
     
-    <!-- 共通パーツ -->
-    <div class="space" style="margin-top: 100px;"></div>
-    <!-- ボタン -->
-    <a href="#" class="button"><span>View more</span></a>
-
-    <div class="space" style="margin-top: 50px;"></div>
+    <!-- contact -->
+    <section class="contact top-contact-layout">
+      <div class="contact__inner inner">
+        <div class="contact__body contact-banner">
+          <div class="contact-banner__access access">
+            <div class="access__logo">
+              <img src="./assets/images/common/logo-green.png" alt="CodeUps">
+            </div>
+            <div class="access__body">
+              <div class="access__box">
+                <p class="access__text">沖縄県那覇市1-1</p>
+                <p class="access__text">TEL:0120-000-0000</p>
+                <p class="access__text">営業時間:8:30-19:00</p>
+                <p class="access__text">定休日:毎週火曜日</p>
+              </div>
+              <div class="access__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9517.353159012291!2d127.67425690889368!3d26.23380587573383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bd2da6906ad%3A0x91b298aa63dcb532!2z44CSOTAwLTAwMDIg5rKW57iE55yM6YKj6KaH5biC5puZ77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1693257610667!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="contact-banner__contact">
+            <div class="contact-banner__title">
+              <h2 class="contact-banner__main-title">Contact</h2>
+              <span class="contact-banner__sub-title">お問い合わせ</span>
+            </div>
+            <p class="contact-banner__text">ご予約・お問い合わせはコチラ</p>
+            <div class="contact-banner__button">
+              <a href="#" class="contact-banner__link button"><span>Contact us</span></a>
+            </div>
+          </div>
+        </div>
+          </div>
+    </section>
     
-    <!-- ヘッダー項目 -->
-    <a href="#" class="header-link">
-      <span class="header-link__title">Campaign</span>
-      <span class="header-link__subtitle">キャンペーン</span>
-    </a>
-
-    <div class="space" style="margin-top: 50px;"></div>
-
-    <!-- セクションタイトル -->
-    <div class="section-title">
-      <h2 class="section-title__main">Campaign</h2>
-      <span class="section-title__sub">キャンペーン</span>
-    </div>
-
-    <div class="space" style="margin-top: 50px;"></div>
-
-    <!-- Campaignカード -->
-    <div class="panel">
-      <div class="panel__image">
-        <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-      </div>
-      <div class="panel__body">
-        <span class="panel__category category-tag">ライセンス講習</span>
-        <h3 class="panel__title">ライセンス取得</h3>
-        <div class="panel__box price">
-          <p class="panel__text">全部コミコミ(お一人様)</p>
-          <div class="panel__price-box">
-            <p class="panel__price">¥56,000</p>
-            <p class="panel__discount">¥46,000</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="space" style="margin-top: 50px;"></div>
-    
-    <!-- blogカード -->
-    <div class="card">
-      <div class="card__image">
-        <img src="./assets/images/common/blog-card.jpg" alt="赤い珊瑚に無数のイソギンチャクがついている様子">
-      </div>
-      <div class="card__body">
-        <time class="card__date" datetime="2023-11-17">2023.11/17</time>
-        <h3 class="card__title">ライセンス取得</h3>
-        <p class="card__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-      </div>
-    </div>
-    
-    <div class="space" style="margin-top: 50px;"></div>
-
-    <!-- Voiceカード -->
-    <div class="text-card">
-      <div class="text-card__header">
-        <div class="text-card__box">
-          <div class="text-card__meta">
-            <div class="text-card__age">20代(女性)</div>
-            <span class="text-card__category category-tag">ライセンス講習</span>
-          </div>
-          <h3 class="text-card__title">ここにタイトルが入ります。ここにタイトル</h3>
-        </div>
-        <div class="text-card__image">
-          <img src="./assets/images/common/voice1.jpg" alt="麦わら帽子をかぶった笑顔の女性">
-        </div>
-      </div>
-      <div class="text-card__body">
-        <p class="text-card__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。</p>
-      </div>
-    </div>
-
-    <div class="space" style="margin-top: 50px;"></div>
-
-    <!-- 料金表 -->
-    <div class="price-list">
-      <h3 class="price-list__title">ライセンス講習</h3>
-      <ul class="price-list__items">
-        <li class="price-list__item">
-          <p class="price-list__item-title">オープンウォーターダイバーコース</p>
-          <p class="price-list__price">¥50,000</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="space" style="margin-top: 50px;"></div>
-
-    <!-- contact banner -->
-    <div class="contact-banner">
-      <div class="contact-banner__access access">
-        <div class="access__logo">
-          <img src="./assets/images/common/logo-green.png" alt="CodeUps">
-        </div>
-        <div class="access__body">
-          <div class="access__box">
-            <p class="access__text">沖縄県那覇市1-1</p>
-            <p class="access__text">TEL:0120-000-0000</p>
-            <p class="access__text">営業時間:8:30-19:00</p>
-            <p class="access__text">定休日:毎週火曜日</p>
-          </div>
-          <div class="access__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9517.353159012291!2d127.67425690889368!3d26.23380587573383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bd2da6906ad%3A0x91b298aa63dcb532!2z44CSOTAwLTAwMDIg5rKW57iE55yM6YKj6KaH5biC5puZ77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1693257610667!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="contact-banner__contact">
-        <div class="contact-banner__title">
-          <h2 class="contact-banner__main-title">Contact</h2>
-          <span class="contact-banner__sub-title">お問い合わせ</span>
-        </div>
-        <p class="contact-banner__text">ご予約・お問い合わせはコチラ</p>
-        <div class="contact-banner__button">
-          <a href="#" class="contact-banner__link button">Contact us</a>
-        </div>
-      </div>
-    </div>
 
   </main>
-  <footer class="footer">
+  <footer class="footer footer-layout">
     <div class="footer__inner inner">
       <div class="footer__header">
         <h2 class="footer__logo">
