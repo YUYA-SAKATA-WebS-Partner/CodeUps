@@ -7,6 +7,7 @@
 .section-title__main {
   font-size: myrem(32);
   font-weight: $regular;
+  line-height: 1.23;
   font-family: $english-font-family;
   color: $black;
   @include mq(md) {

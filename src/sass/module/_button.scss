@@ -6,15 +6,16 @@
   position: relative;
   z-index: 1;
   background-color: $green;
-  padding-top: myrem(16);
+  padding-top: myrem(11);
   padding-left: myrem(40);
-  padding-bottom: myrem(16);
+  padding-bottom: myrem(15);
   border: myrem(1) solid $green;
   transition: background-color .3s;
 }
 
 .button span {
   font-size: myrem(14);
+  line-height: 1.5714;
   color: $white;
   font-family: $english-font-family;
   font-weight: $regular;
@@ -57,7 +58,7 @@
   position: absolute;
   top: 40%;
   transform: skew(45deg);
-  margin-left: myrem(8);
+  margin-left: myrem(5);
   transition: border .3s;
 }
 

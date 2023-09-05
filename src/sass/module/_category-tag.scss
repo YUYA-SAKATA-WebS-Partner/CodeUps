@@ -4,10 +4,10 @@
   display: inline-block;
   font-size: myrem(12);
   font-weight: $regular;
-  letter-spacing: 0.05em;
+  line-height: calc(22 / 12);
   color: $green;
   border: myrem(1) solid $green;
-  padding: myrem(4) myrem(12);
+  padding: myrem(3) myrem(11);
   @include mq(md) {
     padding: myrem(6) myrem(16);
   }

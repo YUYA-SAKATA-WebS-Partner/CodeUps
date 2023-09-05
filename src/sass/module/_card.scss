@@ -17,7 +17,7 @@
 }
 
 .card__body {
-  margin-top: myrem(24);
+  margin-top: myrem(16);
 }
 
 .card__date {
@@ -31,9 +31,7 @@
 .card__title {
   font-size: myrem(16);
   font-weight: $medium;
-  line-height: 1.5;
   color: $black;
-  margin-top: myrem(4);
   padding-bottom: myrem(4);
   border-bottom: myrem(1) solid $green;
 }

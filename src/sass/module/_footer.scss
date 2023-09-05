@@ -6,16 +6,6 @@
   padding-bottom: myrem(56);
 }
 
-// .footer__inner {
-//   padding: 0 myrem(15);
-//   @include mq(md) {
-//     padding: 0 myrem(25);
-//   }
-// }
-
-.footer__header {
-
-}
 
 .footer__logo {
   width: myrem(120);
@@ -26,20 +16,21 @@
 
 .footer__icons {
   display: flex;
-  gap: myrem(16);
-  margin-top: myrem(16);
+  gap: myrem(19);
+  margin-top: myrem(18);
+  margin-left: myrem(2);
 }
 
 .footer__icon {
-  width: myrem(24);
+  width: myrem(20);
 }
 
 .footer__nav {
-  margin-top: myrem(28);
+  margin-top: myrem(31);
 }
 
 .footer__copyright {
-  margin-top: myrem(40);
+  margin-top: myrem(23);
   padding: 0 myrem(14);
   text-align: center;
 }

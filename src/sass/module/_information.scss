@@ -1,27 +1,15 @@
 @use "global" as *;
 
 .information {
-  padding: myrem(80) 0;
+  padding: myrem(80) 0 myrem(83);
   background-color: $green2;
   @include mq(md) {
     padding: myrem(100) 0;
   }
 }
 
-.information__inner {
-
-}
-
-.inner {
-
-}
-
-.information__title {
-
-}
-
 .information__body {
-  margin-top: myrem(24);
+  margin-top: myrem(27);
   @include mq(md) {
     display: flex;
     align-items: center;

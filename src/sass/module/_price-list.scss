@@ -1,15 +1,11 @@
 @use "global" as *;
 
-.price-list {
-
-}
-
 .price-list__title {
   font-size: myrem(16);
   font-weight: $bold;
   line-height: 1.5;
   color: $black;
-  padding-bottom: myrem(4);
+  padding-bottom: myrem(4.4);
   border-bottom: myrem(1) solid $green;
 }
 
@@ -30,6 +26,7 @@
 .price-list__item-title {
   font-size: myrem(14);
   font-weight: $regular;
+  line-height: calc(24 / 14);
   color: $black;
   @include mq(md) {
     font-size: myrem(16);

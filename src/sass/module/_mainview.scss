@@ -28,8 +28,10 @@
 .mainview__title {
   font-size: myrem(40);
   font-weight: $regular;
-  letter-spacing: 0.54em;
+  letter-spacing: 0.53em;
+  text-indent: 0.53em;
   color: $white;
+  line-height: 1;
   font-family: $sub-font-family;
   text-transform: uppercase;
   @include mq(md) {
@@ -38,9 +40,11 @@
 }
 
 .mainview__subtitle {
+  display: inline-block;
   font-size: myrem(20);
   font-weight: $regular;
   font-family: $english-font-family;
   color: $white;
+  margin-top: myrem(5);
 }
 

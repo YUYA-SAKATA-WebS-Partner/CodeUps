@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.page-top {
+  right: myrem(15);
+  bottom: myrem(16);
+  width: myrem(48);
+  height: myrem(48);
+  background-image: url(../images/common/arrow-top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  @include mq(md) {
+    right: myrem(20);
+    bottom: myrem(20);
+    width: myrem(80);
+    height: myrem(80);
+  }
+}
+
+body {
+  position: relative;
+}

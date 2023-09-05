@@ -43,7 +43,8 @@
 }
 
 .blog__body {
-  margin: myrem(24) auto 0;
+  margin: myrem(27) auto 0;
+  padding: 0 myrem(6);
   display: flex;
   flex-direction: column;
   gap: myrem(40);

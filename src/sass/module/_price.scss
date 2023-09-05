@@ -2,7 +2,7 @@
 
 .price {
   background-color: $green2;
-  padding: myrem(80) 0;
+  padding: myrem(80) 0 myrem(84);
   @include mq(md) {
     padding: myrem(100) 0;
   }
@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   gap: myrem(40);
-  margin-top: myrem(24);
+  margin-top: myrem(27);
   @include mq(md) {
     flex-direction: row-reverse;
     gap: myrem(90);
@@ -59,7 +59,7 @@
 }
 
 .price__list:not(:first-child) {
-  margin-top: myrem(40);
+  margin-top: myrem(38);
 }
 
 .price__button {

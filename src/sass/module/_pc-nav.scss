@@ -13,7 +13,28 @@
 }
 
 .pc-nav__link {
+  position: relative;
   height: inherit;
-  padding-left: min(1.3888888889vw, 1.25rem);
-  padding-right: min(1.3888888889vw, 1.25rem);
+  padding-left: min(1.3888888889vw, myrem(20));
+  padding-right: min(1.3888888889vw, myrem(20));
+}
+
+.pc-nav__link::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: myrem(23);
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background: $white;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+.pc-nav__link:hover::after {
+  transform: scale(1, 1);
 }

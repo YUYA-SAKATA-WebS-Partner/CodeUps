@@ -11,6 +11,8 @@
 }
 
 .contact-banner__access {
+  padding-left: myrem(25);
+  padding-right: myrem(25);
   @include mq(md) {
     padding-left: myrem(50);
     padding-right: myrem(82);
@@ -18,7 +20,7 @@
 }
 
 .contact-banner__contact {
-  margin-top: myrem(40);
+  margin-top: myrem(35);
   @include mq(md) {
     margin-top: 0;
     padding-top: myrem(5);
@@ -46,10 +48,12 @@
 }
 
 .contact-banner__sub-title {
+  display: block;
   font-size: myrem(12);
   font-weight: $regular;
   line-height: 1.5;
   color: $green;
+  margin-top: myrem(-7);
 }
 
 .contact-banner__text {

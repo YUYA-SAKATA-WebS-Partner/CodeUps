@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="./js/jquery.inview.min.js"></script>
+  <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
@@ -372,7 +372,7 @@
           <span class="section-title__sub">ダイビング情報</span>
         </div>
         <div class="information__body">
-          <div class="information__image">
+          <div class="information__image colorbox js-colorbox">
             <img src="./assets/images/common/information.webp" alt="">
           </div>
           <div class="information__box">
@@ -420,7 +420,7 @@
             </div>
             <div class="card__body">
               <time class="card__date" datetime="2023-11-17">2023.11/17</time>
-              <h3 class="card__title">ライセンス取得</h3>
+              <h3 class="card__title">カクレクマノミ</h3>
               <p class="card__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
             </div>
           </div>
@@ -448,7 +448,7 @@
                 </div>
                 <h3 class="text-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
-              <div class="text-card__image">
+              <div class="text-card__image colorbox js-colorbox">
                 <img src="./assets/images/common/voice1.webp" alt="麦わら帽子をかぶった笑顔の女性">
               </div>
             </div>
@@ -460,12 +460,12 @@
             <div class="text-card__header">
               <div class="text-card__box">
                 <div class="text-card__meta">
-                  <div class="text-card__age">20代(女性)</div>
-                  <span class="text-card__category category-tag">ライセンス講習</span>
+                  <div class="text-card__age">20代(男性)</div>
+                  <span class="text-card__category category-tag">ファンダイビング</span>
                 </div>
                 <h3 class="text-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
-              <div class="text-card__image">
+              <div class="text-card__image colorbox js-colorbox">
                 <img src="./assets/images/common/voice2.webp" alt="サムズアップしている男性">
               </div>
             </div>
@@ -488,7 +488,7 @@
           <span class="section-title__sub">料金一覧</span>
         </div>
         <div class="price__body">
-          <picture class="price__image">
+          <picture class="price__image colorbox js-colorbox">
             <source srcset="./assets/images/common/price.webp" media="(min-width: 768px)">
             <img src="./assets/images/common/price-sp.webp" alt="">
           </picture>
@@ -505,7 +505,7 @@
                   <p class="price-list__price">¥60,000</p>
                 </li>
                 <li class="price-list__item">
-                  <p class="price-list__item-title">レスキュー&plus;EFRコース</p>
+                  <p class="price-list__item-title">レスキュー＋EFRコース</p>
                   <p class="price-list__price">¥70,000</p>
                 </li>
               </ul>
@@ -607,6 +607,8 @@
           </div>
     </section>
     
+    <!-- 上へボタン -->
+    <div class="page-top js-page-top"></div>
 
   </main>
   <footer class="footer footer-layout">
