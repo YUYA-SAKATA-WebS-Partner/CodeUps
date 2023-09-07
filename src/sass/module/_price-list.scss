@@ -30,6 +30,7 @@
   color: $black;
   @include mq(md) {
     font-size: myrem(16);
+    line-height: 1.5;
   }
 }
 
@@ -39,6 +40,7 @@
   color: $black;
   @include mq(md) {
     font-size: myrem(16);
+    letter-spacing: 0.02em;
   }
 }
 

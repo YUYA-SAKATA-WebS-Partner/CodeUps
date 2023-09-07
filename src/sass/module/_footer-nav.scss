@@ -28,9 +28,10 @@
   display: inline-block;
   font-size: myrem(16);
   font-weight: $bold;
+  line-height: calc(18 / 16);
   color: $white;
-  padding-top: myrem(8);
-  padding-bottom: myrem(8);
+  padding-top: myrem(12);
+  padding-bottom: myrem(12);
   padding-left: myrem(22);
 }
 
@@ -47,7 +48,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: myrem(15);
+  top: myrem(11);
   left: 0;
 }
 
@@ -58,8 +59,9 @@
 .footer-nav__sub-item>a {
   display: inline-block;
   font-size: myrem(16);
+  line-height: calc(18 / 16);
   font-weight: $regular;
   color: $white;
-  padding-top: myrem(10);
-  padding-bottom: myrem(9);
+  padding-top: myrem(12);
+  padding-bottom: myrem(12);
 }

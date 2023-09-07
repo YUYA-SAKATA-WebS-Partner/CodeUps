@@ -19,6 +19,7 @@
   @include mq(md) {
     display: flex;
     gap: myrem(21);
+    margin-top: myrem(8);
   }
 }
 
@@ -27,6 +28,7 @@
   text-align: center;
   @include mq(md) {
     width: calc(100% * calc(146 / 440));
+    text-align: left;
   }
 }
 

@@ -16,7 +16,7 @@
   @include mq(md) {
     content: "";
     position: absolute;
-    bottom: myrem(-45);
+    bottom: myrem(-40);
     left: calc(50% - min(vw(1242, 596), myrem(621)));
     z-index: 10;
     display: inline-block;

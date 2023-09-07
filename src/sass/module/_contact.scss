@@ -9,10 +9,10 @@
     content: "";
     position: absolute;
     top: myrem(-40);
-    right: calc(50% - min(vw(1340, 645), myrem(670)));
+    right: calc(50% - min(vw(1340, 650), myrem(675)));
     z-index: 10;
     display: inline-block;
-    width: myrem(301);
+    width: myrem(310);
     height: myrem(138);
     background-image: url(../images/common/contact-bg.webp);
     background-repeat: no-repeat;

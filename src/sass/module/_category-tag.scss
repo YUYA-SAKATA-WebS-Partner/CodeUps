@@ -9,6 +9,6 @@
   border: myrem(1) solid $green;
   padding: myrem(3) myrem(11);
   @include mq(md) {
-    padding: myrem(6) myrem(16);
+    padding: myrem(4) myrem(15);
   }
 }

@@ -47,6 +47,8 @@
   padding-bottom: myrem(4);
   @include mq(md) {
     font-size: myrem(24);
+    margin-top: myrem(8);
+    padding-bottom: myrem(2);
   }
 }
 

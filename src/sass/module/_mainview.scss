@@ -36,6 +36,7 @@
   text-transform: uppercase;
   @include mq(md) {
     font-size: myrem(80);
+    line-height: calc(100 / 80);
   }
 }
 

@@ -12,6 +12,7 @@
   color: $black;
   @include mq(md) {
     font-size: myrem(40);
+    line-height: 1;
   }
 }
 
@@ -20,10 +21,11 @@
 }
 
 .section-title__sub {
+  display: block;
   font-size: myrem(12);
   font-weight: $regular;
   color: $green;
-  margin-top: myrem(4);
+  margin-top: myrem(8);
 }
 
 .section-title__main--white,
