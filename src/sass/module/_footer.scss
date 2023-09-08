@@ -4,8 +4,19 @@
   background-color: $green;
   padding-top: myrem(48);
   padding-bottom: myrem(56);
+  @include mq(md) {
+    padding-top: myrem(80);
+    padding-bottom: myrem(78);
+  }
 }
 
+.footer__header {
+  @include mq(md) {
+    display: flex;
+    align-items: flex-end;
+    gap: myrem(40);
+  }
+}
 
 .footer__logo {
   width: myrem(120);
@@ -22,17 +33,25 @@
 }
 
 .footer__icon {
-  width: myrem(20);
+  @include mq(md) {
+    width: myrem(26);
+  }
 }
 
 .footer__nav {
   margin-top: myrem(31);
+  @include mq(md) {
+    margin-top: myrem(12);
+  }
 }
 
 .footer__copyright {
   margin-top: myrem(23);
   padding: 0 myrem(14);
   text-align: center;
+  @include mq(md) {
+    margin-top: myrem(14);
+  }
 }
 
 .footer__copyright span {
@@ -40,4 +59,7 @@
   font-weight: $regular;
   font-family: $english-font-family;
   color: $white;
+  @include mq(md) {
+    font-size: myrem(14);
+  }
 }

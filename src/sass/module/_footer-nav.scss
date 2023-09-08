@@ -4,7 +4,7 @@
   display: flex;
   gap: myrem(16);
   @include mq(md) {
-    gap: myrem(120);
+    gap: myrem(118);
   }
 }
 
@@ -12,7 +12,7 @@
   display: block;
   @include mq(md) {
     display: flex;
-    gap: myrem(120);
+    gap: myrem(118);
   }
 }
 

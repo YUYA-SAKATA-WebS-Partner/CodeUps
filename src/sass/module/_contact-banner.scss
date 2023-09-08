@@ -2,7 +2,8 @@
 
 .contact-banner {
   @include mq(md) {
-    padding: myrem(80) 0;
+    padding-top: myrem(80);
+    padding-bottom: myrem(78);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +17,7 @@
   @include mq(md) {
     padding-left: myrem(50);
     padding-right: myrem(82);
+    border-right: myrem(1) solid $green;
   }
 }
 
@@ -27,7 +29,6 @@
     padding-bottom: myrem(4);
     padding-left: myrem(81);
     padding-right: myrem(112);
-    border-left: myrem(1) solid $green;
   }
 }
 
