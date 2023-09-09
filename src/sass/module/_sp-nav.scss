@@ -32,11 +32,11 @@
   display: inline-block;
   font-size: myrem(16);
   font-weight: $bold;
-  letter-spacing: 0.05em;
   color: $white;
   padding-top: myrem(12);
   padding-bottom: myrem(12);
   padding-left: myrem(22);
+  line-height: 1.125;
 }
 
 .sp-nav__item:not(:first-child)>a {
@@ -52,7 +52,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: myrem(15);
   left: 0;
 }
 
@@ -66,4 +65,5 @@
   font-weight: $regular;
   color: $white;
   padding: myrem(12) 0;
+  line-height: 1.125;
 }

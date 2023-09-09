@@ -30,6 +30,11 @@
   gap: myrem(19);
   margin-top: myrem(18);
   margin-left: myrem(2);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: myrem(4);
+    padding-bottom: myrem(8);
+  }
 }
 
 .footer__icon {

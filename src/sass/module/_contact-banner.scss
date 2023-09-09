@@ -25,8 +25,6 @@
   margin-top: myrem(35);
   @include mq(md) {
     margin-top: 0;
-    padding-top: myrem(5);
-    padding-bottom: myrem(4);
     padding-left: myrem(81);
     padding-right: myrem(112);
   }

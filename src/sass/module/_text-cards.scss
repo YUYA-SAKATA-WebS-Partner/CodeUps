@@ -10,6 +10,8 @@
 }
 
 .text-cards__item {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: myrem(600);
   margin: 0 auto;

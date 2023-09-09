@@ -43,6 +43,7 @@
 .price__image {
   aspect-ratio: 345 / 227;
   @include mq(md) {
+    aspect-ratio: 492 / 746;
     width: calc(calc(100% - myrem(90)) / 2);
   }
 }

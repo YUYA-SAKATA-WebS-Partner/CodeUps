@@ -2,8 +2,10 @@
 
 .footer-nav {
   display: flex;
+  justify-content: space-around;
   gap: myrem(16);
   @include mq(md) {
+    justify-content: start;
     gap: myrem(118);
   }
 }

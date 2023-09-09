@@ -7,6 +7,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-drawer").toggleClass("is-active");
   });
 
+  //ドロワーメニュー展開時背景固定
+  var state = false;
+  var pos;
+  $(".js-hamburger,.js-drawer,.drawer-nav__item").click(function(){
+    if (state == false) {
+      pos = $(window).scrollTop();
+      $("body").addClass("fixed").css({"top": -pos});
+      state = true;
+    } else {
+      $("body").removeClass("fixed").css({"top": 0});
+      window.scrollTo(0, pos);
+      state = false;
+    }
+  });
+  
+
   // mainview swiper
   var swiper = new Swiper(".js-top-swiper", {
     spaceBetween: 30,
@@ -15,10 +31,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loop: true,
     speed: 600,
 
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false,
+  //   },
   });
 
   // campaign swiper
@@ -28,10 +44,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     speed: 2000,
 
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         spaceBetween: 40,
@@ -98,7 +114,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(window).on("scroll", function () {
     var scrollHeight = $(document).height();
     var scrollPosition = $(window).height() + $(window).scrollTop();
-    var footHeight = $("footer").innerHeight();
+    var footHeight = $(".footer").innerHeight();
     if (scrollHeight - scrollPosition <= footHeight) {
     // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
       $(".page-top").css({
@@ -108,6 +124,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     } else {
       $(".page-top").css({
         position: "fixed",
+        bottom: 20,
       });
     }
   });
