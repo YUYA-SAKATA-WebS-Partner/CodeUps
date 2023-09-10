@@ -38,9 +38,7 @@
 }
 
 .footer__icon {
-  @include mq(md) {
-    width: myrem(26);
-  }
+  width: myrem(20);
 }
 
 .footer__nav {

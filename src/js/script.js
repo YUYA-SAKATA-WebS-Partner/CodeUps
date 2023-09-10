@@ -31,10 +31,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loop: true,
     speed: 600,
 
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false,
-  //   },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
   // campaign swiper
@@ -44,10 +44,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     speed: 2000,
 
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         spaceBetween: 40,

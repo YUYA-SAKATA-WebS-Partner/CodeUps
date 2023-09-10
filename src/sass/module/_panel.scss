@@ -43,12 +43,13 @@
 }
 
 .panel__text {
-  // text-align: center;
+  text-align: center;
   font-size: myrem(14);
   font-weight: $regular;
   line-height: calc(24 / 14);
   color: $black;
-  @include mq(md) {padding-left: myrem(72);
+  @include mq(md) {
+    text-align: left;
     font-size: myrem(16);
     line-height: calc(24 / 16);
     padding-left: myrem(37);
@@ -59,9 +60,11 @@
   display: flex;
   gap: myrem(18);
   align-items: flex-end;
+  justify-content: center;
   margin-top: myrem(8);
   @include mq(md) {
     gap: myrem(24);
+    justify-content: start;
     margin-top: myrem(10);
   }
 }
