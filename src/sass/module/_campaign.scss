@@ -1,16 +1,21 @@
 @use "global" as *;
 
-.campaign__inner {
+.campaign__inner.inner {
   position: relative;
+  padding-left: 0;
+  @include mq(md) {
+    padding-left: 15px;
+  }
 }
 
 .campaign__panels {
   margin-top: myrem(28);
-  padding-left: myrem(15);
+  padding-left: 15px;
   padding-bottom: myrem(10);
+  margin-right: calc(50% - 50vw);
   @include mq(md) {
     margin-top: myrem(40);
-    margin-left: myrem(165);
+    padding-left: 10px;
   }
 }
 
@@ -39,13 +44,13 @@
 }
 
 .campaign__button-prev {
-  top: 35%;
+  top: 4%;
   left: unset;
   right: myrem(185);
 }
 
 .campaign__button-next {
-  top: 35%;
+  top: 4%;
   right: myrem(25);
 }
 

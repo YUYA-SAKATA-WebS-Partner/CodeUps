@@ -3,9 +3,14 @@
 .text-card {
   padding: myrem(16) myrem(16) myrem(24);
   box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+  transition: opacity .3s ease;
   @include mq(md) {
     padding: myrem(24);
   }
+}
+
+.text-card:hover {
+  opacity: .8;
 }
 
 .text-card__header {

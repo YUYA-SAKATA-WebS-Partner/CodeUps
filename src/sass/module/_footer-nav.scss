@@ -35,6 +35,10 @@
   padding-left: myrem(22);
 }
 
+.footer-nav__item>a span {
+  transition: opacity .3s ease;
+}
+
 .footer-nav__item:not(:first-child)>a {
   margin-top: myrem(16);
 }
@@ -64,4 +68,10 @@
   color: $white;
   padding-top: myrem(12);
   padding-bottom: myrem(12);
+  transition: opacity .3s ease;
+}
+
+.footer-nav__item>a:hover span,
+.footer-nav__sub-item>a:hover {
+  opacity: .6;
 }

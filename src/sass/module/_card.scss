@@ -8,6 +8,11 @@
 
 .card__image {
   aspect-ratio: 301 / 201;
+  transition: opacity .3s ease;
+}
+
+.card:hover .card__image {
+  opacity: .6;
 }
 
 .card__image img {

@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.tab__items {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: myrem(16);
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: start;
+    gap: myrem(32);
+  }
+}
+
+.tab__box {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq(md) {
+    justify-content: start;
+    gap: myrem(32);
+  }
+}
+
+.tab__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: myrem(162);
+  height: myrem(32);
+  border: myrem(1) solid $green;
+}
+
+.tab__item>a {
+  font-size: myrem(14);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $green;
+  padding-top: myrem(6);
+  padding-bottom: myrem(6);
+}
+
+
+.tab__item--large>a {
+  text-transform: uppercase;
+}
