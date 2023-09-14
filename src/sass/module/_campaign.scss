@@ -4,8 +4,16 @@
   position: relative;
 }
 
+.campaign__inner.inner {
+  padding-left: 5px;
+  @include mq(md) {
+    padding-left: 15px;
+  }
+}
+
 .campaign__panels {
   margin-top: myrem(28);
+  padding-left: myrem(10);
   padding-bottom: myrem(10);
   margin-right: calc(50% - 50vw);
   @include mq(md) {

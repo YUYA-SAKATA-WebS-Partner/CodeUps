@@ -1,14 +1,17 @@
 @use "global" as *;
 
 .panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
 }
 
 .panel__link {
-  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
-  display: flex;
-  flex-direction: column;
-  transition: opacity .3s;
-  height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // transition: opacity .3s;
+  // height: 100%;
 }
 
 .panel__link:hover {
@@ -59,7 +62,7 @@
   }
 }
 
-.panel__text {
+.panel__sub-title {
   text-align: center;
   font-size: myrem(14);
   font-weight: $regular;

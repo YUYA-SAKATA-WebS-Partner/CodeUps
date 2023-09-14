@@ -18,6 +18,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  gap: myrem(21);
   @include mq(md) {
     justify-content: start;
     gap: myrem(32);
