@@ -43,6 +43,9 @@
 
 .footer__nav {
   margin-top: myrem(31);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   @include mq(md) {
     margin-top: myrem(12);
   }

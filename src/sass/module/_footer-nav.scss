@@ -5,6 +5,7 @@
   gap: myrem(16);
   @include mq(md) {
     gap: myrem(118);
+    justify-content: unset;
   }
 }
 

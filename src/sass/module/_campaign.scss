@@ -1,21 +1,15 @@
 @use "global" as *;
 
-.campaign__inner.inner {
+.campaign__inner {
   position: relative;
-  padding-left: 0;
-  @include mq(md) {
-    padding-left: 15px;
-  }
 }
 
 .campaign__panels {
   margin-top: myrem(28);
-  padding-left: 15px;
   padding-bottom: myrem(10);
   margin-right: calc(50% - 50vw);
   @include mq(md) {
     margin-top: myrem(40);
-    padding-left: 10px;
   }
 }
 
@@ -25,6 +19,10 @@
   @include mq(md) {
     max-width: myrem(334);
   }
+}
+
+.campaign__panel.swiper-slide {
+  height: auto;
 }
 
 .campaign__button {

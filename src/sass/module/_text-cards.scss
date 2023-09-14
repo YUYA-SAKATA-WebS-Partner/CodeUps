@@ -3,6 +3,7 @@
 .text-cards {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: myrem(40);
   @include mq(md) {
     flex-direction: row;
@@ -16,7 +17,7 @@
   max-width: myrem(600);
   margin: 0 auto;
   @include mq(md) {
-    max-width: calc(calc(100% - myrem(40)) / 2);
+    max-width: calc((100% / 2) - (myrem(40) / 2));
     margin: 0;
   }
 }

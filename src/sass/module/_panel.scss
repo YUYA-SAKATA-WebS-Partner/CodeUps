@@ -1,11 +1,14 @@
 @use "global" as *;
 
 .panel {
-  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
 }
 
 .panel__link {
+  box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+  display: flex;
+  flex-direction: column;
   transition: opacity .3s;
+  height: 100%;
 }
 
 .panel__link:hover {
@@ -26,6 +29,9 @@
 }
 
 .panel__body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: myrem(16) myrem(16) myrem(24);
   @include mq(md) {
     padding: myrem(24) myrem(16) myrem(40);
@@ -43,6 +49,9 @@
 }
 
 .panel__box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin-top: myrem(8);
   @include mq(md) {
     margin-top: myrem(16);
@@ -70,6 +79,7 @@
   align-items: flex-end;
   justify-content: center;
   margin-top: myrem(8);
+  flex: 1;
   @include mq(md) {
     gap: myrem(24);
     justify-content: start;

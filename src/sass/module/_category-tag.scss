@@ -8,6 +8,7 @@
   color: $green;
   border: myrem(1) solid $green;
   padding: myrem(3) myrem(11);
+  width: fit-content;
   @include mq(md) {
     padding: myrem(4) myrem(15);
   }

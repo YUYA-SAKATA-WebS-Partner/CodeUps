@@ -37,6 +37,7 @@
 .price-list__price {
   font-size: myrem(14);
   font-weight: $regular;
+  margin-left: myrem(16);
   color: $black;
   @include mq(md) {
     font-size: myrem(16);

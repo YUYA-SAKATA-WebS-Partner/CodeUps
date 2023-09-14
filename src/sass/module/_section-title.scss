@@ -5,6 +5,7 @@
 }
 
 .section-title__main {
+  display: block;
   font-size: myrem(32);
   font-weight: $regular;
   line-height: 1.23;
@@ -21,7 +22,6 @@
 }
 
 .section-title__sub {
-  display: block;
   font-size: myrem(12);
   font-weight: $regular;
   color: $green;
