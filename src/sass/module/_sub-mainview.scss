@@ -21,7 +21,7 @@
   object-fit: cover;
 }
 
-.sub-mainview__image::after {
+.sub-mainview__image::before {
   content: "";
   position: absolute;
   top: 0;

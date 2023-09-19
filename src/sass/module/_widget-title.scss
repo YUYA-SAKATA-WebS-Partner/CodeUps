@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.widget-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: myrem(74);
+  border-left: myrem(8) solid $green;
+}
+
+.widget-title::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: myrem(16);
+  transform: translateY(-50%);
+  width: myrem(50);
+  height: myrem(50);
+  background-image: url(../images/common/widget-title-logo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.widget-title>span {
+  font-size: myrem(24);
+  font-weight: $regular;
+  color: $black;
+}

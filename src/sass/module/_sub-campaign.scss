@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.sub-campaign__inner {
+  position: relative;
+}
+
+.sub-campaign__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: -10;
+  top: myrem(-24);
+  background-image: url(../images/common/voice-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    left: calc(50% - min(vw(1274, 612), myrem(637)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}
+
+.sub-campaign__body {
+  margin-top: myrem(40);
+}
+
+.sub-campaign__items {
+  display: grid;
+  gap: myrem(40);
+  grid-template-columns: repeat(1, 1fr);
+  padding-left: myrem(33);
+  padding-right: myrem(32);
+  @include mq(md) {
+    gap: myrem(80) myrem(40);
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.sub-campaign__pagenavi {
+  margin-top: myrem(80);
+}

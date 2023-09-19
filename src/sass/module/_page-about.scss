@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.page-about__inner {
+  @include mq(md) {
+    position: relative;
+  }
+}
+
+.page-about__inner::after {
+  @include mq(md) {
+    content: "";
+    position: absolute;
+    right: calc(50% - min(vw(1274, 612), myrem(637)));
+    bottom: myrem(-90);
+    z-index: 10;
+    display: inline-block;
+    width: myrem(194);
+    height: myrem(181);
+    background-image: url(../images/common/about-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.page-about__container {
+  margin-top: myrem(26);
+  @include mq(md) {
+    position: relative;
+    margin-top: myrem(40);
+  }
+}
+
+.page-about__images {
+  display: flex;
+}
+
+.page-about__thin-image {
+  width: calc(100% * calc(128 / 345));
+  aspect-ratio: 128 / 194;
+  z-index: 10;
+}
+
+.page-about__thin-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-about__wide-image {
+  width: 100%;
+  aspect-ratio: 281 / 186;
+  @include mq(md) {
+    width: calc(100% * calc(281 / 345));
+    margin-left: calc(-100% * calc(64 / 345));
+    margin-top: calc(100% * calc(26 / 345));
+  }
+}
+
+.page-about__wide-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-about__body {
+  width: 100%;
+  margin-top: myrem(40);
+  @include mq(md) {
+    display: flex;
+    gap: myrem(40);
+    max-width: myrem(840);
+    position: absolute;
+    z-index: 50;
+    top: calc(100% * calc(200 / 661));
+    right: calc(100% * calc(41 / 1080));
+    margin-top: 0;
+  }
+}
+
+.page-about__heading {
+  font-size: myrem(40);
+  font-weight: $regular;
+  line-height: 1;
+  font-family: $english-font-family;
+  color: $green;
+  width: 100%;
+  @include mq(md) {
+    font-size: myrem(80);
+    line-height: calc(100 / 80);
+    color: $white;
+    max-width: calc(calc(100% - myrem(40)) / 2);
+  }
+}
+
+.page-about__box {
+  width: 100%;
+  margin-top: myrem(16);
+  @include mq(md) {
+    max-width: calc(calc(100% - myrem(40)) / 2);
+    margin-top: 0;
+  }
+}
+
+.page-about__text.text {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
+.page-about__button {
+  margin-top: myrem(27);
+  margin-right: myrem(18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    margin-top: myrem(40);
+    margin-right: myrem(2);
+  }
+}

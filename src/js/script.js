@@ -129,4 +129,66 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // カテゴリータブ
+  var tabLink = $(".js-tab-item");
+	// var limit = 4;
+	$(".js-campaign-item").css('display','none');
+	$(".js-campaign-item").css('display','flex');
+	// for(var i = 0 ; i < limit ; i++) {
+	// 	var limitNews = $(".news-content")[i];
+	// 	$(limitNews).fadeIn();
+	// }
+	$(tabLink).click(function(){
+		$(tabLink).removeClass("is-active");
+		$(this).addClass("is-active");
+		var filter = $(this).attr('data-filter');
+		if (filter == 'category-all') {
+			$(".js-campaign-item").css('display','none');
+			$(".js-campaign-item").fadeIn();
+			// for(i = 0 ; i < limit ; i++) {
+			// 	limitNews = $(".js-campaign-item")[i];
+			// 	$(limitNews).fadeIn();
+			// }
+		} else {
+			$(".js-campaign-item").css('display','none');
+      $(".js-campaign-item").filter('[data-category = "' + filter + '"]').fadeIn();
+			// for(i = 0 ; i < limit ; i++) {
+			// 	limitNews = $(".js-campaign-item").filter('[data-category = "' + filter + '"]')[i];
+			// 	$(limitNews).fadeIn();
+			// }
+		}
+	});
+
+  $('.js-tab-item>a').click(function(){
+    $('.js-tab-content').hide();
+    $('.js-tab-item>a').removeClass('is-active');
+    $(this).toggleClass('is-active');
+    $(this.hash).fadeIn();
+    return false;
+  });
+  $('.js-tab-item a[href^="#panel"]:eq(0)').trigger('click');
+
+  //リンクからハッシュを取得
+  var hash = location.hash;
+  hash = (hash.match(/^#tab\d+$/) || [])[0];
+  //リンクにハッシュが入っていればtabnameに格納
+  if($(hash).length){
+    var tabname = hash.slice(1) ;
+  } else{
+    var tabname = "tab1";
+  }
+ 
+  //コンテンツ非表示&amp;タブを非アクティブ
+  $('.tabs .panel').hide();
+  $('.tabs a').removeClass('active');
+ 
+  //何番目のタブかを格納
+  var tabno = $('.tabs li#' + tabname).index();
+ 
+  //コンテンツ表示
+  $('.tabs .panel').eq(tabno).fadeIn();
+ 
+  //タブのアクティブ化
+  $('.tabs a').eq(tabno).addClass('active');
+
 });

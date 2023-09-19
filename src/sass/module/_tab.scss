@@ -1,5 +1,13 @@
 @use "global" as *;
 
+.tab__inner {
+  display: flex;
+  justify-content: center;
+  @include mq(md) {
+    justify-content: start;
+  }
+}
+
 .tab__items {
   display: inline-flex;
   align-items: center;
@@ -31,19 +39,33 @@
   justify-content: center;
   width: myrem(162);
   height: myrem(32);
-  border: myrem(1) solid $green;
+  cursor: pointer;
 }
 
 .tab__item>a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   font-size: myrem(14);
   font-weight: $regular;
   line-height: 1.5;
+  border: myrem(1) solid $green;
   color: $green;
   padding-top: myrem(6);
   padding-bottom: myrem(6);
+  transition: color .3s, background-color .3s;
 }
-
 
 .tab__item--large>a {
   text-transform: uppercase;
+}
+
+.tab__item.is-active>a {
+  background-color: $green;
+  color: $white;
+}
+
+.tab__item:hover>a {
+  background-color: $green;
+  color: $white;
 }

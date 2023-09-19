@@ -146,151 +146,88 @@
     </nav>
   </header>
   <main>
-
     <!-- sub-mainview -->
     <div class="sub-mainview">
       <picture class="sub-mainview__image">
-        <source srcset="./assets/images/common/page-campaign_mv_pc.webp" media="(min-width: 768px)">
-        <img src="./assets/images/common/page-campaign_mv_sp.webp" alt="">
+        <source srcset="./assets/images/common/page-about_mv_pc.webp" media="(min-width:768px)" type="image/webp">
+        <source srcset="./assets/images/common/page-about_mv_pc.jpg" media="(min-width:768px)">
+        <source srcset="./assets/images/common/page-about_mv_sp.webp" type="image/webp">
+        <img src="./assets/images/common/page-about_mv_sp.jpg" alt="シーサーと青空">
       </picture>
-      <div class="sub-mainview__box">
-        <h1 class="sub-mainview__title">Campaign</h1>
-      </div>
     </div>
 
     <!-- breadcrumbs -->
-    <div class="breadcrumbs inner">TOP > キャンペーン</div>
+    <div class="breadcrumbs inner">TOP > 私たちについて</div>
 
-    <div class="sub-campaign under-campaign-layout">
-      <div class="sub-campaign__inner inner">
-        <div class="sub-campaign__tab tab">
-          <div class="tab__inner">
-            <ul class="tab__items">
-              <div class="tab__box">
-                <li class="tab__item tab__item--large is-active js-tab-item"><a href="/page-campaign.html">all</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-license">ライセンス講習</a></li>
-              </div>
-              <div class="tab__box">
-                <li class="tab__item js-tab-item"><a href="#campaign-diving">ファンダイビング</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-experience">体験ダイビング</a></li>
-              </div>
-            </ul>
+    <!-- contents -->
+    <div class="page-about page-about-layout">
+      <div class="page-about__inner inner">
+        <div class="page-about__container">
+          <div class="page-about__images">
+            <picture class="page-about__thin-image u-desktop">
+              <source srcset="./assets/images/common/about2.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/common/about2.jpg" media="(min-width: 768px)">
+              <source srcset="./assets/images/common/about2-sp.webp" type="image/webp">
+              <img src="./assets/images/common/about2-sp.jpg" alt="瓦葺きの屋根に乗っているシーサーと青い空">
+            </picture>
+            <picture class="page-about__wide-image">
+              <source srcset="./assets/images/common/about.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/common/about.jpg" media="(min-width: 768px)">
+              <source srcset="./assets/images/common/about-sp.webp" type="image/webp">
+              <img src="./assets/images/common/about-sp.jpg" alt="海中で２匹の黄色い魚が向かい合っている様子">
+            </picture>
           </div>
-        </div>
-        <div class="sub-campaign__body">
-          <div class="sub-campaign__items">
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-license">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign1.webp" type="image/webp">
-                <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">ライセンス講習</span>
-                <h3 class="panel__title panel__title--large">ライセンス取得</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥56,000</p>
-                    <p class="panel__discount">¥46,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-experience">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign2.webp" type="image/webp">
-                <img src="./assets/images/common/campaign2.jpg" alt="浜辺から見える島や船の景色">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title panel__title--large">貸切体験ダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥24,000</p>
-                    <p class="panel__discount">¥18,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-experience">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign3.webp" type="image/webp">
-                <img src="./assets/images/common/campaign3.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title panel__title--large">ナイトダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥10,000</p>
-                    <p class="panel__discount">¥8,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-diving">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign4.webp" type="image/webp">
-                <img src="./assets/images/common/campaign4.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">ファンダイビング</span>
-                <h3 class="panel__title panel__title--large">貸切ファンダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥20,000</p>
-                    <p class="panel__discount">¥16,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
+          <div class="page-about__body">
+            <h3 class="page-about__heading">Dive into <br class="u-mobile">the Ocean</h3>
+            <div class="page-about__box">
+              <p class="page-about__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
             </div>
           </div>
         </div>
-        <div class="sub-campaign__pagenavi wp-pagenavi">
-          <a class="previouspostslink" rel="prev" href="#">«</a>
-          <span class="current">1</span>
-          <a class="page smaller" href="#">2</a>
-          <a class="page smaller" href="#">3</a>
-          <a class="page larger" href="#">4</a>
-          <a class="page larger u-desktop" href="#">5</a>
-          <a class="page larger u-desktop" href="#">6</a>
-          <a class="nextpostslink" rel="next" href="#">»</a>
-        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="inner">
+      <div class="gallery">
+        <picture class="gallery__thin-image gallery__image1">
+          <source srcset="./assets/images/common/gallery1_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery1_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery1_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery1_sp.jpg" alt="珊瑚礁に小さな赤い魚が群がっている様子">
+        </picture>
+        <picture class="gallery__wide-image gallery__image2">
+          <source srcset="./assets/images/common/gallery2_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery2_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery2_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery2_sp.jpg" alt="浜辺から見える島や船の景色">
+        </picture>
+        <picture class="gallery__wide-image gallery__image3">
+          <source srcset="./assets/images/common/gallery3_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery3_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery3_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery3_sp.jpg" alt="２匹の魚が海底を泳いでいる様子">
+        </picture>
+      </div>
+      <div class="gallery gallery--reverse">
+        <picture class="gallery__thin-image gallery__image1 gallery__image1--reverse">
+          <source srcset="./assets/images/common/gallery1_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery1_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery1_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery1_sp.jpg" alt="珊瑚礁に小さな赤い魚が群がっている様子">
+        </picture>
+        <picture class="gallery__wide-image gallery__image2 gallery__image2--reverse">
+          <source srcset="./assets/images/common/gallery2_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery2_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery2_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery2_sp.jpg" alt="浜辺から見える島や船の景色">
+        </picture>
+        <picture class="gallery__wide-image gallery__image3 gallery__image3--reverse">
+          <source srcset="./assets/images/common/gallery3_pc.webp" media="(min-width:768px)" type="image/webp">
+          <source srcset="./assets/images/common/gallery3_pc.jpg" media="(min-width:768px)">
+          <source srcset="./assets/images/common/gallery3_sp.webp" type="image/webp">
+          <img src="./assets/images/common/gallery3_sp.jpg" alt="２匹の魚が海底を泳いでいる様子">
+        </picture>
       </div>
     </div>
 

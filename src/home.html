@@ -35,11 +35,11 @@
   <header class="header js-header">
     <div class="header__inner">
       <div class="header__box">
-        <div class="header__logo logo">
+        <h1 class="header__logo logo">
           <a href="/">
             <img src="./assets/images/common/logo.svg" alt="CodeUps">
           </a>
-        </div>
+        </h1>
         <!-- ハンバーガーメニュー -->
         <button class="header__hamburger hamburger js-hamburger u-mobile">
           <span></span>
@@ -144,155 +144,66 @@
         </div>
       </div>
     </nav>
-  </header>
+    </header>
   <main>
-
     <!-- sub-mainview -->
     <div class="sub-mainview">
       <picture class="sub-mainview__image">
-        <source srcset="./assets/images/common/page-campaign_mv_pc.webp" media="(min-width: 768px)">
-        <img src="./assets/images/common/page-campaign_mv_sp.webp" alt="">
+        <source srcset="./assets/images/common/home_mv_pc.webp" media="(min-width:768px)" type="image/webp">
+        <source srcset="./assets/images/common/home_mv_pc.jpg" media="(min-width:768px)">
+        <source srcset="./assets/images/common/home_mv_sp.webp" type="image/webp">
+        <img src="./assets/images/common/home_mv_sp.jpg" alt="魚の大群が泳いでいる様子">
       </picture>
       <div class="sub-mainview__box">
-        <h1 class="sub-mainview__title">Campaign</h1>
+        <h1 class="sub-mainview__title">Blog</h1>
       </div>
     </div>
 
     <!-- breadcrumbs -->
-    <div class="breadcrumbs inner">TOP > キャンペーン</div>
+    <div class="breadcrumbs inner">TOP > ブログ一覧</div>
 
-    <div class="sub-campaign under-campaign-layout">
-      <div class="sub-campaign__inner inner">
-        <div class="sub-campaign__tab tab">
-          <div class="tab__inner">
-            <ul class="tab__items">
-              <div class="tab__box">
-                <li class="tab__item tab__item--large is-active js-tab-item"><a href="/page-campaign.html">all</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-license">ライセンス講習</a></li>
-              </div>
-              <div class="tab__box">
-                <li class="tab__item js-tab-item"><a href="#campaign-diving">ファンダイビング</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-experience">体験ダイビング</a></li>
-              </div>
-            </ul>
-          </div>
+    <!-- sidebar -->
+    <div class="inner">
+      <div class="popular">
+        <div class="popular__title widget-title">
+          <span>人気記事</span>
         </div>
-        <div class="sub-campaign__body">
-          <div class="sub-campaign__items">
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-license">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign1.webp" type="image/webp">
-                <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">ライセンス講習</span>
-                <h3 class="panel__title panel__title--large">ライセンス取得</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥56,000</p>
-                    <p class="panel__discount">¥46,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
+        <ul class="popular__items">
+          <li class="popular__item">
+            <picture class="popular__image">
+              <source srcset="./assets/images/common/article1.webp" type="image/webp">
+              <img src="./assets/images/common/article1.jpg" alt="黄色い魚が海底を泳いでいる様子">
+            </picture>
+            <div class="popular__box">
+              <time class="popular__time" datetime="2023-11-17">2023.11/17</time>
+              <div class="popular__box-title">ライセンス取得</div>
             </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-experience">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign2.webp" type="image/webp">
-                <img src="./assets/images/common/campaign2.jpg" alt="浜辺から見える島や船の景色">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title panel__title--large">貸切体験ダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥24,000</p>
-                    <p class="panel__discount">¥18,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
+          </li>
+          <li class="popular__item">
+            <picture class="popular__image">
+              <source srcset="./assets/images/common/article2.webp" type="image/webp">
+              <img src="./assets/images/common/article2.jpg" alt="黄色い魚が海底を泳いでいる様子">
+            </picture>
+            <div class="popular__box">
+              <time class="popular__time" datetime="2023-11-17">2023.11/17</time>
+              <div class="popular__box-title">ライセンス取得</div>
             </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-experience">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign3.webp" type="image/webp">
-                <img src="./assets/images/common/campaign3.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title panel__title--large">ナイトダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥10,000</p>
-                    <p class="panel__discount">¥8,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
+          </li>
+          <li class="popular__item">
+            <picture class="popular__image">
+              <source srcset="./assets/images/common/article3.webp" type="image/webp">
+              <img src="./assets/images/common/article3.jpg" alt="黄色い魚が海底を泳いでいる様子">
+            </picture>
+            <div class="popular__box">
+              <time class="popular__time" datetime="2023-11-17">2023.11/17</time>
+              <div class="popular__box-title">ライセンス取得</div>
             </div>
-            <div class="sub-campaign__item panel js-tab-content" id="campaign-diving">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign4.webp" type="image/webp">
-                <img src="./assets/images/common/campaign4.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">ファンダイビング</span>
-                <h3 class="panel__title panel__title--large">貸切ファンダイビング</h3>
-                <div class="panel__box panel__box--center">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥20,000</p>
-                    <p class="panel__discount">¥16,000</p>
-                  </div>
-                </div>
-                <div class="panel__detail u-desktop">
-                  <p class="panel__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                  <div class="panel__button">
-                    <div class="panel__date">2023/6/1-9/30</div>
-                    <p class="panel__lead">ご予約・お問い合わせはコチラ</p>
-                    <a href="#" class="panel__link button"><span>Contact us</span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sub-campaign__pagenavi wp-pagenavi">
-          <a class="previouspostslink" rel="prev" href="#">«</a>
-          <span class="current">1</span>
-          <a class="page smaller" href="#">2</a>
-          <a class="page smaller" href="#">3</a>
-          <a class="page larger" href="#">4</a>
-          <a class="page larger u-desktop" href="#">5</a>
-          <a class="page larger u-desktop" href="#">6</a>
-          <a class="nextpostslink" rel="next" href="#">»</a>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
+
+
 
     <!-- contact -->
     <section class="contact top-contact-layout">
@@ -316,8 +227,8 @@
           </div>
           <div class="contact-banner__contact">
             <div class="contact-banner__title">
-              <h2 class="contact-banner__main-title">Contact</h2>
-              <span class="contact-banner__sub-title">お問い合わせ</span>
+              <span class="contact-banner__main-title">Contact</span>
+              <h2 class="contact-banner__sub-title">お問い合わせ</h2>
             </div>
             <p class="contact-banner__text">ご予約・お問い合わせはコチラ</p>
             <div class="contact-banner__button">

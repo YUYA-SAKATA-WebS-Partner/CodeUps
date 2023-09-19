@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.breadcrumbs {
+  font-size: myrem(14);
+  font-weight: $regular;
+  color: $black;
+  margin-top: myrem(8);
+}
