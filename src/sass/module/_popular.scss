@@ -8,11 +8,20 @@
   margin-top: myrem(24);
 }
 
+.popular__item:not(:first-child) {
+  margin-top: myrem(24);
+}
+
 .popular__item>a {
   display: flex;
   gap: myrem(16);
   padding: myrem(16);
   box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
+  transition: opacity .3s;
+}
+
+.popular__item>a:hover {
+  opacity: .6;
 }
 
 .popular__image {

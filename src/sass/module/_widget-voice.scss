@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.widget-voice__items {
+  margin-top: myrem(24);
+}
+
+.widget-voice__item>a {
+  transition: opacity .3s;
+}
+
+.widget-voice__item>a:hover {
+  opacity: .6;
+}
+
+.widget-voice__image img {
+  aspect-ratio: 294 / 218;
+  object-fit: cover;
+}
+
+.widget-voice__box {
+  margin-top: myrem(16);
+}
+
+.widget-voice__meta {
+  font-size: myrem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+.widget-voice__item-title {
+  font-size: myrem(24);
+  font-weight: $regular;
+  color: $black;
+  margin-top: myrem(8);
+}
+
+.widget-voice__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: myrem(40);
+}
+
