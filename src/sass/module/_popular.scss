@@ -4,15 +4,14 @@
   width: 294px;
 }
 
-.popular__title {
-
+.popular__items {
+  margin-top: myrem(24);
 }
 
-.popular__item {
+.popular__item>a {
   display: flex;
   gap: myrem(16);
   padding: myrem(16);
-  margin-top: myrem(24);
   box-shadow: myrem(2) myrem(2) myrem(10) rgba($color: #000000, $alpha: 0.25);
 }
 
