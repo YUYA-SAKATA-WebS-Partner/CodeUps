@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.widget-campaign__panels {
+  margin-top: myrem(24);
+}
+
+.widget-campaign__panel:not(:first-child) {
+  margin-top: myrem(40);
+}
+
+.widget-campaign__button {
+  margin-top: myrem(40);
+  text-align: center;
+}

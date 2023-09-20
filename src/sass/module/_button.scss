@@ -3,6 +3,7 @@
 .button {
   display: inline-block;
   width: myrem(202);
+  text-align: left;
   position: relative;
   z-index: 1;
   background-color: $green;
