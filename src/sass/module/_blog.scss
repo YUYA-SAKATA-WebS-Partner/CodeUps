@@ -70,9 +70,7 @@
 }
 
 .blog__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-top: myrem(38);
   @include mq(md) {
     margin-top: myrem(80);

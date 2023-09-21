@@ -13,6 +13,8 @@
 }
 
 .header__inner {
+  position: relative;
+  z-index: 9999;
   padding-left: myrem(15);
   padding-right: myrem(15);
   height: inherit;
@@ -20,6 +22,10 @@
     padding-left: myrem(40);
     padding-right: myrem(20);
   }
+}
+
+.header__inner.is-active {
+  background-color: $green;
 }
 
 .header__box {

@@ -53,6 +53,7 @@
 .panel__box {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   flex: 1;
   margin-top: myrem(8);
   @include mq(md) {
@@ -82,7 +83,6 @@
   align-items: flex-end;
   justify-content: center;
   margin-top: myrem(8);
-  flex: 1;
   @include mq(md) {
     gap: myrem(24);
     justify-content: start;

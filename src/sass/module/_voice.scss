@@ -40,9 +40,7 @@
 }
 
 .voice__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-top: myrem(40);
   @include mq(md) {
     margin-top: myrem(80);

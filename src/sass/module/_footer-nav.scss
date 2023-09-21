@@ -27,6 +27,7 @@
 .footer-nav__item>a {
   position: relative;
   display: inline-block;
+  width: 100%;
   font-size: myrem(16);
   font-weight: $bold;
   line-height: calc(18 / 16);
@@ -63,6 +64,7 @@
 
 .footer-nav__sub-item>a {
   display: inline-block;
+  width: 100%;
   font-size: myrem(16);
   line-height: calc(18 / 16);
   font-weight: $regular;
