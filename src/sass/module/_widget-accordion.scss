@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.archive-accordion__year,
+.archive-accordion__month {
+  position: relative;
+  font-size: myrem(24);
+  font-weight: $regular;
+  color: $green;
+  padding-left: myrem(29);
+}
+
+.archive-accordion__month {
+  margin-left: myrem(26);
+}
+
+.archive-accordion__year::before,
+.archive-accordion__month::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  height: myrem(21);
+  width: calc((myrem(21) / 2) * tan(60deg));
+  background-color: $green;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.archive-accordion__header.is-open .archive-accordion__year::before {
+  width: myrem(21);
+  height: calc((myrem(21) / 2) * tan(60deg));
+  background-color: $green;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.widget-archive__body {
+  margin-top: myrem(24);
+}
+
+.widget-archive__accordion:not(:first-child) {
+  margin-top: myrem(3);
+}
