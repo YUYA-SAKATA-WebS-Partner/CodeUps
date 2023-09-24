@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.accordion {
+
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $green;
+  padding: myrem(16);
+  cursor: pointer;
+  transition: opacity .3s;
+  @include mq(md) {
+    padding: myrem(26) myrem(40);
+  }
+}
+
+.accordion__header:hover {
+  opacity: .6;
+}
+
+.accordion__title {
+  font-size: myrem(16);
+  font-weight: $regular;
+  color: $white;
+  @include mq(md) {
+    font-size: myrem(20);
+  }
+}
+
+
+.accordion__button {
+  position: relative;
+  width: myrem(28);
+  height: myrem(28);
+}
+
+.accordion__button span {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: myrem(1);
+  background-color: $white;
+}
+
+.accordion__button span:nth-child(2) {
+  transform: rotate(90deg);
+  transition: transform .3s;
+}
+
+.accordion__button.is-open span:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  padding: myrem(24) myrem(16);
+  border: myrem(1) solid $green;
+  display: none;
+  // transform: translateY(-100%);
+  // visibility: hidden;
+  // opacity: 0;
+  // transition: transform .3s, visibility .3s, opacity .3s;
+  @include mq(md) {
+    padding: myrem(40);
+  }
+}
+
+// .accordion__body.is-open {
+//   transform: translateY(0);
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+.accordion__text {
+
+}
+
+

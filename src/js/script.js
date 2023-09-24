@@ -192,4 +192,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //タブのアクティブ化
   $('.tabs a').eq(tabno).addClass('active');
 
+
+
+  // accordion
+  $('.js-accordion-header').click(function(){
+    $('.js-accordion-body').slideToggle(300);
+    $('.js-accordion-button').toggleClass('is-open');
+  });
+
 });
