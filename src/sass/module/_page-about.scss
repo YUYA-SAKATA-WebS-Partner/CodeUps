@@ -1,31 +1,34 @@
 @use "global" as *;
 
 .page-about__inner {
+  position: relative;
+}
+
+.page-about__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: 10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   @include mq(md) {
-    position: relative;
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
   }
 }
 
-.page-about__inner::after {
-  @include mq(md) {
-    content: "";
-    position: absolute;
-    right: calc(50% - min(vw(1274, 612), myrem(637)));
-    bottom: myrem(-90);
-    z-index: 10;
-    display: inline-block;
-    width: myrem(194);
-    height: myrem(181);
-    background-image: url(../images/common/about-bg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
 
 .page-about__container {
+  position: relative;
   margin-top: myrem(26);
   @include mq(md) {
-    position: relative;
     margin-top: myrem(40);
   }
 }
@@ -66,6 +69,7 @@
   @include mq(md) {
     display: flex;
     gap: myrem(40);
+    align-items: flex-end;
     max-width: myrem(840);
     position: absolute;
     z-index: 50;
@@ -81,21 +85,25 @@
   line-height: 1;
   font-family: $english-font-family;
   color: $green;
-  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: myrem(24);
+  left: myrem(24);
+  color: $white;
   @include mq(md) {
+    position: static;
     font-size: myrem(80);
     line-height: calc(100 / 80);
     color: $white;
+    width: 100%;
     max-width: calc(calc(100% - myrem(40)) / 2);
   }
 }
 
 .page-about__box {
   width: 100%;
-  margin-top: myrem(16);
   @include mq(md) {
     max-width: calc(calc(100% - myrem(40)) / 2);
-    margin-top: 0;
   }
 }
 
