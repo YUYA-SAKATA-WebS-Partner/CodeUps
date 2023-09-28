@@ -15,8 +15,8 @@
   padding-left: myrem(25);
   padding-right: myrem(25);
   @include mq(md) {
-    padding-left: myrem(50);
-    padding-right: myrem(82);
+    padding-left: min(2.23vw, myrem(50));
+    padding-right: min(3.78vw, myrem(82));
     border-right: myrem(1) solid $green;
   }
 }
