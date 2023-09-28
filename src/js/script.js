@@ -200,4 +200,24 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.js-accordion-button').toggleClass('is-open');
   });
 
+  // modal
+  var trigger = $('.js-modal-trigger'),
+      layer = $('.js-modal-layer'),
+      image = $('.js-modal-image'),
+      modal = $('.js-modal');
+  
+  $(trigger).click(function() {
+    var index = $(this).index();
+    $(modal).eq(index).fadeIn(300);
+
+    // var pos = $(window).scrollTop();
+    $('body').addClass("fixed")
+  });
+
+  $(layer).add(image).click(function(){
+    $(modal).fadeOut(300);
+
+    $('body').removeClass('fixed');
+  });
+
 });
