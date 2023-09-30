@@ -201,23 +201,63 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // modal
-  var trigger = $('.js-modal-trigger'),
-      layer = $('.js-modal-layer'),
-      image = $('.js-modal-image'),
-      modal = $('.js-modal');
-  
-  $(trigger).click(function() {
-    var index = $(this).index();
-    $(modal).eq(index).fadeIn(300);
+  var modal = $('.js-modal');
+  var thinImage = $('.js-modal-trigger:nth-child(6n+1)>img, .js-modal-trigger:nth-child(6n+6)>img');
+  var wideImage = $('.js-modal-trigger:nth-child(6n+2)>img, .js-modal-trigger:nth-child(6n+3)>img, .js-modal-trigger:nth-child(6n+4)>img, .js-modal-trigger:nth-child(6n+5)>img')
 
-    // var pos = $(window).scrollTop();
-    $('body').addClass("fixed")
-  });
+    // 横長の画像をクリックしたときの処理
+    wideImage.click(function() {
+        var imageSrc = $(this).attr('src');
+        openModal(imageSrc);
+    });
 
-  $(layer).add(image).click(function(){
-    $(modal).fadeOut(300);
+    // 縦長の画像をクリックしたときの処理
+    thinImage.click(function() {
+        var thinImageSrc = $(this).attr('src');
+        openThinModal(thinImageSrc);
+    });
 
-    $('body').removeClass('fixed');
-  });
+    // モーダル外をクリックしたときの処理
+    modal.click(function(event) {
+        if (event.target === this) {
+            closeModal();
+        }
+    });
+
+    function openModal(imageSrc) {
+        $('.js-modal-image>img').attr('src', imageSrc).css({
+          'aspect-ratio':'920 / 586',
+          'object-fit':'cover'
+        });
+        modal.css('display', 'block');
+        $('.modal__content').css('width', 'min(63.89%, 920px)');
+        $('body').css('overflow', 'hidden'); // スクロールを無効にする
+
+        modal.addClass('show');
+    }
+
+    function openThinModal(thinImageSrc) {
+        $('.js-modal-image>img').attr('src', thinImageSrc).css({
+          'aspect-ratio':'492 / 746',
+          'object-fit':'cover'
+        });
+        modal.css('display', 'block');
+        $('.modal__content').css('width', 'min(32.84%, 473px)');
+        $('body').css('overflow', 'hidden'); // スクロールを無効にする
+
+        modal.addClass('show');
+    }
+
+    function closeModal() {
+      modal.removeClass('show');
+
+        modal.css('display', 'none');
+        $('.js-modal-image>img').css({
+          'aspect-ratio':'unset',
+          'object-fit':'unset'
+        });
+        $('.modal__content').css('width', 'initial');
+        $('body').css('overflow', 'auto'); // スクロールを有効に戻す
+    }
 
 });
