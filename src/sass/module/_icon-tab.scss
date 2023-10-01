@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.icon-tab {
+
+}
+
+.icon-tab__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-tab__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(myrem(102), 27.78%, myrem(300));
+  box-shadow: myrem(2) myrem(2) myrem(4) rgba($color: #000000, $alpha: 0.25);
+  background-color: $green2;
+  color: $green;
+  padding: myrem(9) 0;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+  @include mq(md) {
+    padding: myrem(13) 0;
+    // height: myrem(64);
+  }
+}
+
+.icon-tab__tab:hover {
+  background-color: $green;
+  color: $white;
+}
+
+.icon-tab__tab:hover .icon-tab__image>img path {
+  fill: $white;
+}
+
+.icon-tab__image {
+  width: myrem(64);
+  height: myrem(64);
+}
+
+// .icon-tab__button {
+//   text-align: center;
+//   height: inherit;
+//   padding: myrem(8) 0;
+//   color: $green;
+//   font-size: myrem(14);
+//   font-weight: $regular;
+//   @include mq(md) {
+//     font-size: myrem(24);
+//   }
+// }
+
+.icon-tab__text {
+  text-align: center;
+  // color: $green;
+  font-size: myrem(14);
+  font-weight: $regular;
+  @include mq(md) {
+    // height: inherit;
+    font-size: myrem(24);
+    margin-left: myrem(8);
+  }
+}
+
