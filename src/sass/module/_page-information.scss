@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.page-information__cards {
+  margin-top: myrem(16);
+  @include mq(md) {
+    margin-top: myrem(24);
+  }
+}
+
+.page-information__card {
+  display: none;
+}
+
+.page-information__card.current {
+  display: block;
+}

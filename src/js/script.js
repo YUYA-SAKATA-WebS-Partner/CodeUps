@@ -260,4 +260,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $('body').css('overflow', 'auto'); // スクロールを有効に戻す
     }
 
+    // information タブ
+    $('.js-information-tab').click(function() {
+      let index = $('.js-information-tab').index(this);
+
+      $('.js-information-tab').removeClass('current');
+      $(this).addClass('current');
+      $('.js-information-card').removeClass('current');
+      $('.js-information-card').eq(index).addClass('current');
+    });
+
 });

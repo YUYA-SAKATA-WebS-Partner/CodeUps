@@ -1,10 +1,6 @@
 @use "global" as *;
 
 .icon-tab {
-
-}
-
-.icon-tab__tabs {
   display: flex;
   justify-content: space-between;
 }
@@ -19,20 +15,16 @@
   color: $green;
   padding: myrem(9) 0;
   cursor: pointer;
-  transition: color .3s, background-color .3s;
+  transition: background-color .3s;
   @include mq(md) {
-    padding: myrem(13) 0;
+    padding: myrem(27) 0;
     // height: myrem(64);
   }
 }
 
-.icon-tab__tab:hover {
+.icon-tab__tab:hover,
+.icon-tab__tab.current {
   background-color: $green;
-  color: $white;
-}
-
-.icon-tab__tab:hover .icon-tab__image>img path {
-  fill: $white;
 }
 
 .icon-tab__image {
@@ -40,27 +32,57 @@
   height: myrem(64);
 }
 
-// .icon-tab__button {
+.icon-tab__button {
+  position: relative;
+  text-align: center;
+  height: inherit;
+  font-size: myrem(14);
+  font-weight: $regular;
+  color: $green;
+  transition: color .3s;
+  @include mq(md) {
+    font-size: myrem(24);
+    padding: 0 0 0 myrem(72);
+  }
+}
+
+.icon-tab__tab:hover .icon-tab__button,
+.icon-tab__tab.current .icon-tab__button {
+  color: $white;
+}
+
+.icon-tab__button::before {
+  display: none;
+  content: "";
+  width: myrem(64);
+  height: myrem(64);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/common/whale_icon-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image .3s;
+  @include mq(md) {
+    display: inline-block;
+  }
+}
+
+.icon-tab__tab:hover .icon-tab__button::before,
+.icon-tab__tab.current .icon-tab__button::before {
+  background-image: url(../images/common/whale_icon.png);
+}
+
+// .icon-tab__text {
 //   text-align: center;
-//   height: inherit;
-//   padding: myrem(8) 0;
-//   color: $green;
+//   // color: $green;
 //   font-size: myrem(14);
 //   font-weight: $regular;
 //   @include mq(md) {
+//     // height: inherit;
 //     font-size: myrem(24);
+//     margin-left: myrem(8);
 //   }
 // }
-
-.icon-tab__text {
-  text-align: center;
-  // color: $green;
-  font-size: myrem(14);
-  font-weight: $regular;
-  @include mq(md) {
-    // height: inherit;
-    font-size: myrem(24);
-    margin-left: myrem(8);
-  }
-}
 
