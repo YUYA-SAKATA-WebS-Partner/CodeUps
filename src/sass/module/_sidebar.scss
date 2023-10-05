@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.sidebar {
+
+}
+
+.sidebar__inner {
+  padding-left: myrem(25);
+  padding-right: myrem(26);
+  @include mq(md) {
+    padding: 0;
+  }
+}
+
+.sidebar__widget:not(:first-child) {
+  margin-top: myrem(80);
+}

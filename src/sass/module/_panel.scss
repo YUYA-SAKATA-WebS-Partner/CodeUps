@@ -34,6 +34,13 @@
   }
 }
 
+.panel__body--narrow {
+  padding: myrem(16) myrem(23) myrem(24);
+  @include mq(md) {
+    padding: myrem(16) myrem(23) myrem(24);
+  }
+}
+
 .panel__title {
   margin-top: myrem(4);
   padding-bottom: myrem(7);
@@ -48,6 +55,10 @@
   @include mq(md) {
     font-size: myrem(24);
   }
+}
+
+.panel__title--center {
+  text-align: center;
 }
 
 .panel__box {
@@ -114,6 +125,12 @@
   background-color: $red;
 }
 
+.panel__price--small {
+  @include mq(md) {
+    font-size: myrem(20);
+  }
+}
+
 .panel__discount {
   font-size: myrem(32);
   font-weight: $bold;
@@ -122,6 +139,12 @@
   font-family: $sub-font-family;
   @include mq(md) {
     font-size: myrem(40);
+  }
+}
+
+.panel__discount--small {
+  @include mq(md) {
+    font-size: myrem(32);
   }
 }
 

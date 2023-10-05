@@ -44,28 +44,12 @@
   }
 }
 
-.blog__body {
+.blog__cards {
   margin: myrem(27) auto 0;
   padding: 0 myrem(6);
-  display: flex;
-  flex-direction: column;
-  gap: myrem(40);
   @include mq(md) {
-    flex-direction: row;
     margin-top: myrem(80);
     padding: 0;
-  }
-}
-
-.blog__card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: myrem(600);
-  margin: 0 auto;
-  @include mq(md) {
-    max-width: calc((100% / 3) - (myrem(80) / 3));
-    margin: 0;
   }
 }
 
