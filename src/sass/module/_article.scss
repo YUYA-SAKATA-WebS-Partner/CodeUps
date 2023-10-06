@@ -41,6 +41,7 @@
 }
 
 .article__image {
+  display: inline-block;
   margin-top: myrem(24);
   @include mq(md) {
     margin-top: myrem(40);
@@ -70,7 +71,25 @@
 }
 
 .article__list {
+  position: relative;
+  padding-left: myrem(27);
+}
 
+.article__list:not(:first-child) {
+  margin-top: myrem(4);
+}
+
+.article__list::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: myrem(18);
+  height: myrem(18);
+  background-image: url(../images/common/list_icon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-article__pagenavi {
