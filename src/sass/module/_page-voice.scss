@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.page-voice {
+}
+
+.page-voice__inner {
+  position: relative;
+}
+
+.page-voice__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: 10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}
+
+.page-voice__tab {
+  margin-top: myrem(52);
+  @include mq(md) {
+    margin-top: myrem(150);
+  }
+}
+
+.page-voice__body {
+  margin-top: myrem(40);
+}
+
+.page-voice__items {
+
+}
+
+.page-voice__cards {
+
+}
+
+.text-cards {
+
+}
+
+.page-voice__pagenavi {
+  margin-top: myrem(80);
+}
