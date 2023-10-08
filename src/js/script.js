@@ -196,8 +196,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // accordion
   $('.js-accordion-header').click(function(){
-    $('.js-accordion-body').slideToggle(300);
-    $('.js-accordion-button').toggleClass('is-open');
+    $(this).next('.accordion__body').slideToggle(300);
+    $(this).toggleClass('is-open');
   });
 
   // modal

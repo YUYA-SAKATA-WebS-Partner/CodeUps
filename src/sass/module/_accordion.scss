@@ -50,31 +50,27 @@
   transition: transform .3s;
 }
 
-.accordion__button.is-open span:nth-child(2) {
+.accordion__header.is-open .accordion__button span:nth-child(2) {
   transform: rotate(180deg);
+}
+
+.accordion__header.stay .accordion__button span:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.accordion__header.stay.is-open .accordion__button span:nth-child(2) {
+  transform: rotate(90deg);
 }
 
 .accordion__body {
   padding: myrem(24) myrem(16);
   border: myrem(1) solid $green;
   display: none;
-  // transform: translateY(-100%);
-  // visibility: hidden;
-  // opacity: 0;
-  // transition: transform .3s, visibility .3s, opacity .3s;
   @include mq(md) {
     padding: myrem(40);
   }
 }
 
-// .accordion__body.is-open {
-//   transform: translateY(0);
-//   visibility: visible;
-//   opacity: 1;
-// }
-
-.accordion__text {
-
+.accordion__body.stay {
+  display: block;
 }
-
-

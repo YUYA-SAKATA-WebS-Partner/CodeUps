@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.page-faq__inner {
+  position: relative;
+}
+
+.page-faq__inner.inner {
+  width: 100%;
+  max-width: myrem(750);
+}
+
+.page-faq__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: 10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}
+
+.page-faq__accordion:not(:first-child) {
+  margin-top: myrem(40);
+}
+
+.accordion__body {
+  @include mq(md) {
+    margin-top: myrem(16);
+  }
+}
