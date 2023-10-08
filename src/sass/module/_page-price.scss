@@ -1,10 +1,18 @@
 @use "global" as *;
 
-.page-voice__inner {
+.page-price {
+
+}
+
+.sub-page-price-layout {
+
+}
+
+.page-price__inner {
   position: relative;
 }
 
-.page-voice__inner::before {
+.page-price__inner::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -24,10 +32,14 @@
   }
 }
 
-.page-voice__body {
-  margin-top: myrem(40);
+.page-price__tables {
+
 }
 
-.page-voice__pagenavi {
-  margin-top: myrem(80);
+.page-price__table:not(:first-child) {
+  margin-top: myrem(40);
+  @include mq(md) {
+    margin-top: myrem(80);
+  }
 }
+
