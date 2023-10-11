@@ -24,6 +24,8 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
   border-bottom: myrem(1) dotted $green;
   padding-bottom: myrem(24);
   @include mq(md) {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: myrem(40);
   }
 }
@@ -36,6 +38,7 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
 }
 
 .form__item dt {
+  position: relative;
   font-size: myrem(16);
   font-weight: $bold;
   color: $black;
@@ -58,26 +61,21 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
   color: $white;
   font-family: $base-font-family;
   transform: translateY(-10%);
+  @include mq(md) {
+    top: 0;
+  }
 }
 
-// .form__item dt span {
-//   display: inline-block;
-//   width: myrem(61);
-//   height: myrem(21);
-//   background-color: $red;
-//   font-size: myrem(12);
-//   font-weight: $regular;
-//   letter-spacing: 0.4em;
-//   text-indent: 0.4em;
-//   color: $white;
-//   font-family: $base-font-family;
-//   text-align: center;
-// }
+.form__item--optional dt::after {
+  display: none;
+}
 
 .form__item dd {
+  width: 100%;
   margin-top: myrem(16);
   @include mq(md) {
     margin-top: 0;
+    max-width: myrem(480);
   }
 }
 
@@ -110,6 +108,12 @@ textarea {
   width: 100%;
   border: myrem(1) solid $green;
   background-color: #fff;
+}
+
+.form__check {
+  display: flex;
+  flex-direction: column;
+  column-gap: myrem(4);
 }
 
 [type="checkbox"] {
@@ -197,4 +201,34 @@ textarea {
 
 ::placeholder {
   color: $green2;
+}
+
+.form__consent {
+  margin-top: myrem(40);
+  display: flex;
+  justify-content: center;
+  padding: 0 myrem(33);
+  @include mq(md) {
+    margin-top: myrem(80);
+  }
+}
+
+.form__consent span {
+  font-size: myrem(14);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
+}
+
+.form__consent span::before {
+  top: 10%;
+  transform: translateY(0);
+}
+
+.form__button {
+  text-align: center;
+  margin-top: myrem(24);
+  @include mq(md) {
+    margin-top: myrem(40);
+  }
 }

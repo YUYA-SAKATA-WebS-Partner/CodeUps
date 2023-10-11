@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.page-contact__inner {
+  position: relative;
+  @include mq(md) {
+    max-width: myrem(750);
+  }
+}
+
+.page-contact__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: -10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}

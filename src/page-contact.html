@@ -29,6 +29,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -155,17 +156,20 @@
         <img src="./assets/images/common/page-faq_mv_sp.jpg" alt="５人のダイバーが海面を泳いでいる様子">
       </picture>
       <div class="sub-mainview__box">
-        <h1 class="sub-mainview__title sub-mainview__title--large">faq</h1>
+        <h1 class="sub-mainview__title sub-mainview__title--large">contact</h1>
       </div>
     </div>
 
     <!-- breadcrumbs -->
-    <div class="breadcrumbs inner">TOP > よくある質問</div>
+    <div class="breadcrumbs inner">TOP > お問い合わせ</div>
 
     <!-- content -->
     <div class="page-contact sub-page-contact-layout">
       <div class="page-contact__inner inner">
-        <form action="" method="post" id="" class="page-contact__form form">
+        <div class="page-contact__error">
+          <p class="page-contact__error-text"></p>
+        </div>
+        <form action="#" method="post" id="js-form" class="page-contact__form form">
           <dl class="form__item">
             <dt>
               <label for="name">お名前</label>
@@ -194,14 +198,14 @@
             <dt class="">
               お問い合わせ項目
             </dt>
-            <dd class="">
+            <dd class="form__check">
               <label><input type="checkbox" name="inquiry" value="ダイビング講習について" checked/><span>ダイビング講習について</span></label>
               <label><input type="checkbox" name="inquiry" value="ファンデイビングについて"/><span>ファンデイビングについて</span></label>
               <label><input type="checkbox" name="inquiry" value="体験ダイビングについて"/><span>体験ダイビングについて</span></label>
             </dd>
           </dl>
-          <dl class="form__item">
-            <dt>
+          <dl class="form__item form__item--optional">
+            <dt class="form__campaign">
               キャンペーン
             </dt>
             <dd class="form__select">
@@ -216,15 +220,18 @@
           </dl>
           <dl class="form__item">
             <dt>
-              <label for="contents">お問い合せ内容</label>
+              <label for="contents">お問い合わせ内容</label>
             </dt>
             <dd>
               <textarea id="contents" name="contents" required></textarea>
             </dd>
           </dl>
-          <div class="">
-            <input type="button" class="button" value="Send" />
-          </div>  
+          <div class="form__consent">
+            <label><input type="checkbox" name="consent" value="同意する" required/><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+          </div>
+          <div class="form__button">
+            <button class="button button--form" type="submit"><span>Send</span></button>
+          </div>
         </form>
       </div>
     </div>

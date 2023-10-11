@@ -271,3 +271,52 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
 });
+
+  // =============================
+  // フォームバリデーション
+  // =============================
+  $(document).ready(function() {
+    $('.page-contact__error').hide();
+    // 最初はエラーメッセージを非表示
+    $('#js-form').validate({
+      // フォームのバリデーションルールを設定
+      rules: {
+        name: {
+          required: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        tel: {
+          required: true,
+        },
+        inquiry: {
+          required: true,
+        },
+      },
+      messages: {
+        name: {
+          required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
+        },
+        email: {
+          required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
+        },
+        tel: {
+          required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
+        },
+        inquiry: {
+          required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
+        },
+      },
+      errorClass: "validation-error",
+      errorElement: "span",
+      errorPlacement: function (error, element) {
+        // errorにエラーメッセージが格納されている
+        // elementは対象となるinput要素
+        error.appendTo($('.page-contact__error-text'));
+        element.addClass('error');
+        $('.page-contact__error').show();
+      },
+    });
+  });
