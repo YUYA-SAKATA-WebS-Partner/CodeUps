@@ -1,16 +1,16 @@
 @use "global" as *;
 
-.page-price__inner {
+.page-thanks__inner {
   position: relative;
 }
 
-.page-price__inner::before {
+.page-thanks__inner::before {
   content: "";
   position: absolute;
   display: inline-block;
   width: myrem(120);
   height: myrem(55);
-  z-index: 10;
+  z-index: -10;
   top: myrem(-24);
   background-image: url(../images/common/bg-fish2.webp);
   background-repeat: no-repeat;
@@ -24,10 +24,10 @@
   }
 }
 
-.page-price__table:not(:first-child) {
-  margin-top: myrem(40);
-  @include mq(md) {
-    margin-top: myrem(80);
-  }
+.page-thanks__text {
+  text-align: center;
 }
 
+.page-thanks__text + .page-thanks__text {
+  margin-top: myrem(40);
+}
