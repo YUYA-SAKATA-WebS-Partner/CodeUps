@@ -284,7 +284,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         name: {
           required: true,
         },
-        email: {
+        mail_address: {
           required: true,
           email: true,
         },
@@ -294,12 +294,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         inquiry: {
           required: true,
         },
+        contents: {
+          required: true,
+        },
       },
       messages: {
         name: {
           required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
         },
-        email: {
+        mail_address: {
           required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
         },
         tel: {
@@ -308,14 +311,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         inquiry: {
           required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
         },
+        contents: {
+          required: '※必須項目が入力されていません。<span class="u-mobile"><br>&emsp;</span>入力してください。',
+        },
       },
-      errorClass: "validation-error",
       errorElement: "span",
       errorPlacement: function (error, element) {
+        $('.page-contact__error-text').empty();
         // errorにエラーメッセージが格納されている
         // elementは対象となるinput要素
         error.appendTo($('.page-contact__error-text'));
-        element.addClass('error');
+        element.addClass('validation-error');
         $('.page-contact__error').show();
       },
     });

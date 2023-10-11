@@ -232,3 +232,25 @@ textarea {
     margin-top: myrem(40);
   }
 }
+
+// error validation
+.page-contact__error {
+  display: flex;
+  justify-content: center;
+  margin-bottom: myrem(40);
+}
+
+.page-contact__error-text span {
+  font-size: myrem(14);
+  font-weight: $regular;
+  color: $red;
+}
+
+.validation-error {
+  background-color: rgba($color: $red, $alpha: 0.2);
+  border-color: $red;
+}
+
+.validation-error::placeholder {
+  color: $white;
+}
