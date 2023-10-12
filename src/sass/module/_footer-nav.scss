@@ -58,6 +58,14 @@
   left: 0;
 }
 
+.footer-nav__item--black>a {
+  color: $black;
+}
+
+.footer-nav__item--black>a::before {
+  background-image: url(../images/common/nav-icon.png);
+}
+
 .footer-nav__sub-items {
   padding-left: myrem(24);
 }
@@ -77,4 +85,8 @@
 .footer-nav__item>a:hover span,
 .footer-nav__sub-item>a:hover {
   opacity: .6;
+}
+
+.footer-nav__sub-item--black>a {
+  color: $black;
 }

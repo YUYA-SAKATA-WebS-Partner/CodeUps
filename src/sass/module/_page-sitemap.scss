@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.page-sitemap__inner {
+  position: relative;
+}
+
+.page-sitemap__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: -10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    display: none;
+  }
+}
