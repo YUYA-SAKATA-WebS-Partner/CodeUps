@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.sub-page-privacy-policy-layout {
+  margin-top: myrem(52);
+  @include mq(md) {
+    margin-top: myrem(150);
+  }
+}
