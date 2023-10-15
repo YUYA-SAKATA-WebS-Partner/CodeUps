@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .sub-page-about-layout {
-  margin-top: myrem(80);
+  margin-top: myrem(52);
   @include mq(md) {
-    margin-top: myrem(178);
+    margin-top: myrem(149);
   }
 }
