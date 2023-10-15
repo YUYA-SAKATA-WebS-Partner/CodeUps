@@ -3,7 +3,7 @@
 .contact-banner {
   @include mq(md) {
     padding-top: myrem(80);
-    padding-bottom: myrem(78);
+    padding-bottom: myrem(69);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,11 +48,12 @@
 }
 
 .contact-banner__sub-title {
+  display: block;
   font-size: myrem(12);
   font-weight: $regular;
   line-height: 1.5;
   color: $green;
-  margin-top: myrem(-7);
+  margin-top: myrem(-5);
 }
 
 .contact-banner__text {

@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include mq(md) {
-    left: calc(50% - min(vw(1274, 612), myrem(637)));
+    left: calc(50% - min(vw(1290, 620), myrem(620)));
     top: myrem(-70);
     width: myrem(301);
     height: myrem(138);
@@ -42,5 +42,8 @@
 }
 
 .page-campaign__pagenavi {
-  margin-top: myrem(80);
+  margin-top: myrem(78);
+  @include mq(md) {
+    margin-top: myrem(80);
+  }
 }

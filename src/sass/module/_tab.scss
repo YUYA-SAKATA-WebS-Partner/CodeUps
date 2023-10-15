@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: myrem(16);
+  gap: myrem(18);
   @include mq(md) {
     flex-direction: row;
     justify-content: start;

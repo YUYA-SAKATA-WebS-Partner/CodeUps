@@ -37,13 +37,16 @@
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
+  @include mq(md) {
+    top: 48%;
+    transform: unset;
+  }
 }
 
 .sub-mainview__title {
   font-size: myrem(40);
   font-weight: $regular;
   line-height: 1.5;
-  letter-spacing: 0.05em;
   color: $white;
   font-family: $sub-font-family;
   @include mq(md) {

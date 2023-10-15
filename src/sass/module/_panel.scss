@@ -30,14 +30,14 @@
   height: 100%;
   padding: myrem(16) myrem(16) myrem(24);
   @include mq(md) {
-    padding: myrem(24) myrem(16) myrem(40);
+    padding: myrem(24) myrem(24) myrem(40);
   }
 }
 
 .panel__body--narrow {
   padding: myrem(16) myrem(23) myrem(24);
   @include mq(md) {
-    padding: myrem(16) myrem(23) myrem(24);
+    padding: myrem(16) myrem(16) myrem(24);
   }
 }
 
@@ -150,6 +150,9 @@
 
 .panel__detail {
   margin-top: myrem(24);
+  @include mq(md) {
+    margin-top: myrem(29);
+  }
 }
 
 .panel__button {
@@ -157,13 +160,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: myrem(32);
+  margin-top: myrem(34);
+  @include mq(md) {
+    margin-top: myrem(33);
+  }
 }
 
 .panel__date {
   font-size: myrem(16);
   font-weight: $bold;
   line-height: calc(18 / 16);
+  letter-spacing: 0.03em;
   font-family: $sub-font-family;
   color: $green;
   text-align: center;
