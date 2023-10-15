@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.page-privacy-policy__inner {
+  position: relative;
+}
+
+.page-privacy-policy__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: 10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}
+
+.page-privacy-policy__inner.inner {
+  @include mq(md) {
+    max-width: myrem(800);
+  }
+}
+
+.page-privacy-policy__title {
+  font-size: myrem(24);
+  font-weight: $medium;
+  color: $black;
+  @include mq(md) {
+    font-size: myrem(32);
+  }
+}
+
+.page-privacy-policy__contents {
+  margin-top: myrem(40);
+}
+
+.page-privacy-policy__text:not(:first-of-type) {
+  margin-top: myrem(32);
+}
+
+.page-privacy-policy__items {
+  margin-top: myrem(32);
+}
+
+.page-privacy-policy__item dl {
+  padding-left: 1em;
+}
+
+.page-privacy-policy__item-text {
+  padding-left: 1em;
+}
+
+.page-privacy-policy__subitems {
+  margin-top: myrem(32);
+  padding-left: 1em;
+}

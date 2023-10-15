@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.page-terms__inner.inner {
+  @include mq(md) {
+    max-width: myrem(800);
+  }
+}
+
+.page-terms__contents {
+  margin-top: myrem(40);
+}
+
+.page-terms__text:not(:first-of-type) {
+  margin-top: myrem(32);
+}
+
+.page-terms__items {
+  margin-top: myrem(32);
+}
+
+.page-terms__item-text {
+  padding-left: 1em;
+}
+
+.page-terms__lists {
+  padding-left: 1em;
+}

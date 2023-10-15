@@ -6,3 +6,10 @@
     margin-top: myrem(157);
   }
 }
+
+.footer-layout--nomargin {
+  margin-top: 0;
+  @include mq(md) {
+    margin: 0;
+  }
+}

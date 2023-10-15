@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.sub-page-404-layout {
+  padding-top: myrem(80);
+  @include mq(md) {
+    padding-top: myrem(90);
+  }
+}

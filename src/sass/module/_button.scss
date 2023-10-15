@@ -78,3 +78,33 @@
 .button--form {
   padding-left: myrem(56);
 }
+
+.button--reverse {
+  background-color: $white;
+  border-color: $white;
+}
+
+.button--reverse::before {
+  background: $green;
+}
+
+.button--reverse span {
+  color: $green;
+}
+
+.button--reverse::after {
+  border-color: $white;
+}
+
+.button--reverse span::after {
+  border-bottom: myrem(1) solid $green;
+  border-right: myrem(1) solid $green;
+}
+
+.button--reverse:hover span {
+  color: $white;
+}
+
+.button--reverse:hover span::after {
+  border-color: $white;
+}

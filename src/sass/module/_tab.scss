@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 
-.tab__item>a {
+.tab__item>span {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -56,16 +56,16 @@
   transition: color .3s, background-color .3s;
 }
 
-.tab__item--large>a {
+.tab__item--large>span {
   text-transform: uppercase;
 }
 
-.tab__item.is-active>a {
+.tab__item.is-active>span {
   background-color: $green;
   color: $white;
 }
 
-.tab__item:hover>a {
+.tab__item:hover>span {
   background-color: $green;
   color: $white;
 }

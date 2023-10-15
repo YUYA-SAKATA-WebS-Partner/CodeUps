@@ -167,19 +167,19 @@
           <div class="tab__inner">
             <ul class="tab__items">
               <div class="tab__box">
-                <li class="tab__item tab__item--large is-active js-tab-item"><a href="/page-campaign.html">all</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-license">ライセンス講習</a></li>
+                <li class="tab__item tab__item--large is-active js-tab-item" data-category="all"><span class="is-active">all</span></li>
+                <li class="tab__item js-tab-item" data-category="license"><span>ライセンス講習</span></li>
               </div>
               <div class="tab__box">
-                <li class="tab__item js-tab-item"><a href="#campaign-diving">ファンダイビング</a></li>
-                <li class="tab__item js-tab-item"><a href="#campaign-experience">体験ダイビング</a></li>
+                <li class="tab__item js-tab-item" data-category="diving"><span>ファンダイビング</span></li>
+                <li class="tab__item js-tab-item" data-category="experience"><span>体験ダイビング</span></li>
               </div>
             </ul>
           </div>
         </div>
         <div class="page-campaign__body">
           <div class="page-campaign__items">
-            <div class="page-campaign__item panel js-tab-content" id="campaign-license">
+            <div class="page-campaign__item panel js-tab-content" data-category="license">
               <picture class="panel__image">
                 <source srcset="./assets/images/common/campaign1.webp" type="image/webp">
                 <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
@@ -204,7 +204,7 @@
                 </div>
               </div>
             </div>
-            <div class="page-campaign__item panel js-tab-content" id="campaign-experience">
+            <div class="page-campaign__item panel js-tab-content" data-category="experience">
               <picture class="panel__image">
                 <source srcset="./assets/images/common/campaign2.webp" type="image/webp">
                 <img src="./assets/images/common/campaign2.jpg" alt="浜辺から見える島や船の景色">
@@ -229,7 +229,7 @@
                 </div>
               </div>
             </div>
-            <div class="page-campaign__item panel js-tab-content" id="campaign-experience">
+            <div class="page-campaign__item panel js-tab-content" data-category="experience">
               <picture class="panel__image">
                 <source srcset="./assets/images/common/campaign3.webp" type="image/webp">
                 <img src="./assets/images/common/campaign3.jpg" alt="多数のカラフルな魚が泳いでいる様子">
@@ -254,7 +254,7 @@
                 </div>
               </div>
             </div>
-            <div class="page-campaign__item panel js-tab-content" id="campaign-diving">
+            <div class="page-campaign__item panel js-tab-content" data-category="diving">
               <picture class="panel__image">
                 <source srcset="./assets/images/common/campaign4.webp" type="image/webp">
                 <img src="./assets/images/common/campaign4.jpg" alt="多数のカラフルな魚が泳いでいる様子">
