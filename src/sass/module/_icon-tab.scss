@@ -13,7 +13,7 @@
   box-shadow: myrem(2) myrem(2) myrem(4) rgba($color: #000000, $alpha: 0.25);
   background-color: $green2;
   color: $green;
-  padding: myrem(9) 0;
+  padding: myrem(8) 0;
   cursor: pointer;
   transition: background-color .3s;
   @include mq(md) {
