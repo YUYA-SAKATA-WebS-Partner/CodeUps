@@ -30,4 +30,7 @@
 
 .page-voice__pagenavi {
   margin-top: myrem(80);
+  @include mq(md) {
+    margin-top: myrem(72);
+  }
 }

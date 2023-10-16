@@ -27,7 +27,7 @@
 .page-article__body {
   @include mq(md) {
     display: flex;
-    gap: myrem(83);
+    gap: myrem(87);
   }
 }
 
@@ -39,7 +39,7 @@
 }
 
 .page-article__sidebar {
-  margin-top: myrem(80);
+  margin-top: myrem(82);
   @include mq(md) {
     width: min(27.22%, myrem(294));
     margin-top: 0;

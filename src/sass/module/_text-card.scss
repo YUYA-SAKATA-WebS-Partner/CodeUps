@@ -53,7 +53,8 @@
   font-weight: $medium;
   color: $black;
   border-bottom: myrem(1) solid $green;
-  padding-bottom: myrem(4);
+  padding-bottom: myrem(2);
+  margin-top: myrem(2);
   @include mq(md) {
     font-size: myrem(24);
     margin-top: myrem(8);
