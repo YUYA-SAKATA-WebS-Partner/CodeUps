@@ -40,7 +40,7 @@
 .sub-blog__cards.cards {
   @include mq(md) {
     grid-template-columns: repeat(2,1fr);
-    gap: myrem(80) myrem(40);
+    gap: myrem(79) myrem(40);
   }
 }
 

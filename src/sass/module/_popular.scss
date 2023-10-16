@@ -34,6 +34,7 @@
 }
 
 .popular__time {
+  display: block;
   font-size: myrem(12);
   font-weight: $regular;
   line-height: 1.5;
@@ -45,6 +46,6 @@
   font-size: myrem(16);
   font-weight: $medium;
   color: $black;
-  margin-top: myrem(4);
+  margin-top: myrem(2);
 }
 

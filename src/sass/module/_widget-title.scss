@@ -4,6 +4,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: myrem(7);
+  padding-bottom: myrem(7);
   padding-left: myrem(74);
   border-left: myrem(8) solid $green;
 }
