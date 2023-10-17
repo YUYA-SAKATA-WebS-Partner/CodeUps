@@ -1,18 +1,15 @@
 @use "global" as *;
 
-.accordion {
-
-}
-
 .accordion__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: $green;
-  padding: myrem(16);
+  padding: myrem(12) myrem(16) myrem(15);
   cursor: pointer;
   transition: opacity .3s;
   @include mq(md) {
-    padding: myrem(26) myrem(40);
+    padding: myrem(25) myrem(40);
   }
 }
 
@@ -63,14 +60,22 @@
 }
 
 .accordion__body {
-  padding: myrem(24) myrem(16);
+  padding: myrem(22) myrem(16) myrem(23);
   border: myrem(1) solid $green;
   display: none;
   @include mq(md) {
-    padding: myrem(40);
+    padding: myrem(39) myrem(40);
+    margin-top: myrem(15);
   }
 }
 
 .accordion__body.stay {
   display: block;
+}
+
+.accordion__text.text {
+  line-height: 1.44;
+  @include mq(md) {
+    line-height: 1.5;
+  };
 }

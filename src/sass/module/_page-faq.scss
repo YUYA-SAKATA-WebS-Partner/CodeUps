@@ -30,11 +30,9 @@
 }
 
 .page-faq__accordion:not(:first-child) {
-  margin-top: myrem(40);
-}
-
-.accordion__body {
+  margin-top: myrem(40.5);
   @include mq(md) {
-    margin-top: myrem(16);
+    margin-top: myrem(36);
   }
 }
+
