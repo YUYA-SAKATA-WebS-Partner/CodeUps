@@ -46,6 +46,9 @@
   line-height: 1.5;
   color: $white;
   margin-left: myrem(8);
+  @include mq(md) {
+    margin-left: 0;
+  }
 }
 
 .price-table__lists {
@@ -70,6 +73,7 @@
 
 .price-table__title {
   width: 69.57%;
+  height: myrem(60);
   justify-content: center;
   text-align: center;
   padding: myrem(8) myrem(16);
@@ -83,6 +87,7 @@
 
 .price-table__price {
   width: 30.43%;
+  height: myrem(60);
   justify-content: flex-end;
   overflow-x: scroll;
   padding-right: myrem(16);

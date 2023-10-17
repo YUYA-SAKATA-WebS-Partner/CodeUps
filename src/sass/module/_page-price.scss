@@ -27,7 +27,7 @@
 .page-price__table:not(:first-child) {
   margin-top: myrem(40);
   @include mq(md) {
-    margin-top: myrem(80);
+    margin-top: myrem(76);
   }
 }
 
