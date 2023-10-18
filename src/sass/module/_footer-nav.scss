@@ -9,11 +9,23 @@
   }
 }
 
+.footer-nav--wide {
+  @include mq(md) {
+    gap: myrem(142);
+  }
+}
+
 .footer-nav__box {
   display: block;
   @include mq(md) {
     display: flex;
     gap: myrem(118);
+  }
+}
+
+.footer-nav__box--wide {
+  @include mq(md) {
+    gap: myrem(142);
   }
 }
 
