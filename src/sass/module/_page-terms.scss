@@ -1,8 +1,41 @@
 @use "global" as *;
 
+.page-terms__inner {
+  position: relative;
+}
+
+.page-terms__inner::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: myrem(120);
+  height: myrem(55);
+  z-index: 10;
+  top: myrem(-24);
+  background-image: url(../images/common/bg-fish2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    z-index: -10;
+    left: calc(50% - min(vw(1240, 595), myrem(620)));
+    top: myrem(-70);
+    width: myrem(301);
+    height: myrem(138);
+  }
+}
+
 .page-terms__inner.inner {
   @include mq(md) {
-    max-width: myrem(800);
+    max-width: myrem(850);
+  }
+}
+
+.page-terms__title {
+  font-size: myrem(24);
+  font-weight: $medium;
+  color: $black;
+  @include mq(md) {
+    font-size: myrem(32);
   }
 }
 

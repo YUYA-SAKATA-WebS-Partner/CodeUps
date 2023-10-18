@@ -49,13 +49,14 @@
 .page-404__title {
   font-size: myrem(80);
   font-weight: $regular;
-  line-height: 1.2;
+  line-height: 1.12;
   letter-spacing: 0.5em;
   text-indent: 0.5em;
   color: $white;
   font-family: $sub-font-family;
   @include mq(md) {
     font-size: myrem(160);
+    line-height: 1.2;
   }
 }
 
