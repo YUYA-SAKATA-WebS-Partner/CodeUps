@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .sub-page-sitemap-layout {
-  margin-top: myrem(52);
+  margin-top: myrem(39);
   @include mq(md) {
     margin-top: myrem(137);
   }
