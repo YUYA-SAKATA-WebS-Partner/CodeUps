@@ -7,7 +7,7 @@ $back-cr: $white;//input（テキスト系）の背景色
 
 /*サイズ等の指定*/
 $fz: myrem(12);//入力するときのfont-size
-$padding-und: myrem(11);//paddingの指定（上下） inputの内側の余白で使う
+$padding-und: myrem(5);//paddingの指定（上下） inputの内側の余白で使う
 $padding-lnr: myrem(8);//paddingの指定（左右） inp
 
 /*チェックボックスの指定*/
@@ -26,14 +26,14 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
   @include mq(md) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: myrem(40);
+    padding-bottom: myrem(39);
   }
 }
 
 .form__item:not(:first-child) {
-  margin-top: myrem(24);
+  margin-top: myrem(26);
   @include mq(md) {
-    margin-top: myrem(40);
+    margin-top: myrem(39);
   }
 }
 
@@ -47,20 +47,20 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
 .form__item dt::after {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-23%);
   content: "必須";
   display: inline-block;
   width: myrem(61);
   height: myrem(21);
   background-color: $red;
   text-align: center;
+  margin-left: myrem(4);
   font-size: myrem(12);
   font-weight: $regular;
   letter-spacing: 0.4em;
   text-indent: 0.4em;
   color: $white;
   font-family: $base-font-family;
-  transform: translateY(-10%);
   @include mq(md) {
     top: 0;
   }
@@ -72,7 +72,7 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
 
 .form__item dd {
   width: 100%;
-  margin-top: myrem(16);
+  margin-top: myrem(11);
   @include mq(md) {
     margin-top: 0;
     max-width: myrem(480);
@@ -104,7 +104,7 @@ $check-weight: 2px;//チェックマークの線の太さ(px)
 [type="password"],
 [type="date"],
 textarea {
-  padding: myrem(8) myrem(16);
+  padding: myrem(7) myrem(16);
   width: 100%;
   border: myrem(1) solid $green;
   background-color: #fff;
@@ -113,7 +113,10 @@ textarea {
 .form__check {
   display: flex;
   flex-direction: column;
-  column-gap: myrem(4);
+  gap: myrem(2);
+  @include mq(md) {
+    gap: myrem(4);
+  }
 }
 
 [type="checkbox"] {
@@ -196,7 +199,7 @@ select {
 textarea {
 	height: myrem(200);
   width: 100%;
-  max-width: rem(480);
+  max-width: myrem(480);
 }
 
 ::placeholder {
@@ -204,12 +207,12 @@ textarea {
 }
 
 .form__consent {
-  margin-top: myrem(40);
+  margin-top: myrem(35);
   display: flex;
   justify-content: center;
   padding: 0 myrem(33);
   @include mq(md) {
-    margin-top: myrem(80);
+    margin-top: myrem(73);
   }
 }
 
@@ -218,11 +221,15 @@ textarea {
   font-weight: $regular;
   line-height: 1.5;
   color: $black;
+  padding-left: myrem(35);
 }
 
 .form__consent span::before {
-  top: 10%;
+  top: -3%;
   transform: translateY(0);
+  width: myrem(22);
+  height: myrem(22);
+  left: myrem(-2);
 }
 
 .form__button {

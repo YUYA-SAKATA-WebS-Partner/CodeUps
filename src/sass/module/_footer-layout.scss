@@ -13,3 +13,10 @@
     margin: 0;
   }
 }
+
+.footer-layout--sub {
+  margin-top: myrem(148);
+  @include mq(md) {
+    margin-top: myrem(163);
+  }
+}
