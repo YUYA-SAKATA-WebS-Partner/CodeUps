@@ -5,7 +5,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(".js-hamburger,.js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").toggleClass("is-active");
-    $(".js-header-inner").toggleClass("is-active");
+    $(".header__inner").toggleClass("is-active");
   });
 
   //ドロワーメニュー展開時背景固定
@@ -32,10 +32,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loop: true,
     speed: 600,
 
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
   // campaign swiper
@@ -45,10 +45,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     speed: 2000,
 
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       768: {
         spaceBetween: 40,

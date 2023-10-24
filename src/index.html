@@ -32,8 +32,8 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header class="header js-header">
-    <div class="header__inner js-header-inner">
+  <header class="header">
+    <div class="header__inner">
       <div class="header__box">
         <h1 class="header__logo logo">
           <a href="/">
@@ -50,51 +50,51 @@
         <nav class="header__nav pc-nav u-desktop">
           <ul class="pc-nav__items">
             <li class="pc-nav__item">
-              <a href="/page-campaign.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Campaign</span>
-                <span class="header-link__subtitle">キャンペーン</span>
+              <a href="/page-campaign.html" class="pc-nav__link">
+                <span class="pc-nav__title">Campaign</span>
+                <span class="pc-nav__subtitle">キャンペーン</span>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="/page-about.html" class="pc-nav__link header-link">
-                <span class="header-link__title">About us</span>
-                <span class="header-link__subtitle">私たちについて</span>
+              <a href="/page-about.html" class="pc-nav__link">
+                <span class="pc-nav__title">About us</span>
+                <span class="pc-nav__subtitle">私たちについて</span>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="/page-information.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Information</span>
-                <span class="header-link__subtitle">ダイビング情報</span>
+              <a href="/page-information.html" class="pc-nav__link">
+                <span class="pc-nav__title">Information</span>
+                <span class="pc-nav__subtitle">ダイビング情報</span>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="/home.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Blog</span>
-                <span class="header-link__subtitle">ブログ</span>
+              <a href="/home.html" class="pc-nav__link">
+                <span class="pc-nav__title">Blog</span>
+                <span class="pc-nav__subtitle">ブログ</span>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="/page-voice.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Voice</span>
-                <span class="header-link__subtitle">お客様の声</span>
+              <a href="/page-voice.html" class="pc-nav__link">
+                <span class="pc-nav__title">Voice</span>
+                <span class="pc-nav__subtitle">お客様の声</span>
               </a>
             </li>
             <li class="pc-nav__item pc-nav__item--white">
-              <a href="/page-price.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Price</span>
-                <span class="header-link__subtitle">料金一覧</span>
+              <a href="/page-price.html" class="pc-nav__link">
+                <span class="pc-nav__title">Price</span>
+                <span class="pc-nav__subtitle">料金一覧</span>
               </a>
             </li>
             <li class="pc-nav__item pc-nav__item--white">
-              <a href="/page-faq.html" class="pc-nav__link header-link">
-                <span class="header-link__title">FAQ</span>
-                <span class="header-link__subtitle">よくある質問</span>
+              <a href="/page-faq.html" class="pc-nav__link">
+                <span class="pc-nav__title">FAQ</span>
+                <span class="pc-nav__subtitle">よくある質問</span>
               </a>
             </li>
             <li class="pc-nav__item">
-              <a href="/page-contact.html" class="pc-nav__link header-link">
-                <span class="header-link__title">Contact</span>
-                <span class="header-link__subtitle">お問合せ</span>
+              <a href="/page-contact.html" class="pc-nav__link">
+                <span class="pc-nav__title">Contact</span>
+                <span class="pc-nav__subtitle">お問合せ</span>
               </a>
             </li>
           </ul>
@@ -188,8 +188,10 @@
         <div class="campaign__title section-title">
           <span class="section-title__main">Campaign</span>
           <h2 class="section-title__sub">キャンペーン</h2>
-          <div class="swiper-button-next campaign__button-next u-desktop"></div>
-          <div class="swiper-button-prev campaign__button-prev u-desktop"></div>
+        </div>
+        <div class="campaign__arrows">
+          <div class="swiper-button-prev campaign__arrow-prev"></div>
+          <div class="swiper-button-next campaign__arrow-next"></div>
         </div>
         <div class="campaign__panels swiper js-top-campaign-swiper">
           <div class="swiper-wrapper">
@@ -261,53 +263,59 @@
                 </div>
               </div>
             </div>
-            <div class="campaign__panel panel swiper-slide">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign1.webp" type="image/webp">
-                <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">ライセンス講習</span>
-                <h3 class="panel__title">ライセンス取得</h3>
-                <div class="panel__box">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥56,000</p>
-                    <p class="panel__discount">¥46,000</p>
+            <div class="campaign__panel swiper-slide">
+              <div class="panel">
+                <picture class="panel__image">
+                  <source srcset="./assets/images/common/campaign1.webp" type="image/webp">
+                  <img src="./assets/images/common/campaign1.jpg" alt="多数のカラフルな魚が泳いでいる様子">
+                </picture>
+                <div class="panel__body">
+                  <span class="panel__category category-tag">ライセンス講習</span>
+                  <h3 class="panel__title">ライセンス取得</h3>
+                  <div class="panel__box">
+                    <p class="panel__sub-title">全部コミコミ(お一人様)</p>
+                    <div class="panel__price-box">
+                      <p class="panel__price">¥56,000</p>
+                      <p class="panel__discount">¥46,000</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="campaign__panel panel swiper-slide">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign2.webp" type="image/webp">
-                <img src="./assets/images/common/campaign2.jpg" alt="浜辺から見える島や船の景色">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title">貸切体験ダイビング</h3>
-                <div class="panel__box">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥24,000</p>
-                    <p class="panel__discount">¥18,000</p>
+            <div class="campaign__panel swiper-slide">
+              <div class="panel">
+                <picture class="panel__image">
+                  <source srcset="./assets/images/common/campaign2.webp" type="image/webp">
+                  <img src="./assets/images/common/campaign2.jpg" alt="浜辺から見える島や船の景色">
+                </picture>
+                <div class="panel__body">
+                  <span class="panel__category category-tag">体験ダイビング</span>
+                  <h3 class="panel__title">貸切体験ダイビング</h3>
+                  <div class="panel__box">
+                    <p class="panel__sub-title">全部コミコミ(お一人様)</p>
+                    <div class="panel__price-box">
+                      <p class="panel__price">¥24,000</p>
+                      <p class="panel__discount">¥18,000</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="campaign__panel panel swiper-slide">
-              <picture class="panel__image">
-                <source srcset="./assets/images/common/campaign3.webp" type="image/webp">
-                <img src="./assets/images/common/campaign3.jpg" alt="暗い水中で無数の小さなクラゲがライトアップされている様子">
-              </picture>
-              <div class="panel__body">
-                <span class="panel__category category-tag">体験ダイビング</span>
-                <h3 class="panel__title">ナイトダイビング</h3>
-                <div class="panel__box">
-                  <p class="panel__sub-title">全部コミコミ(お一人様)</p>
-                  <div class="panel__price-box">
-                    <p class="panel__price">¥10,000</p>
-                    <p class="panel__discount">¥8,000</p>
+            <div class="campaign__panel swiper-slide">
+              <div class="panel">
+                <picture class="panel__image">
+                  <source srcset="./assets/images/common/campaign3.webp" type="image/webp">
+                  <img src="./assets/images/common/campaign3.jpg" alt="暗い水中で無数の小さなクラゲがライトアップされている様子">
+                </picture>
+                <div class="panel__body">
+                  <span class="panel__category category-tag">体験ダイビング</span>
+                  <h3 class="panel__title">ナイトダイビング</h3>
+                  <div class="panel__box">
+                    <p class="panel__sub-title">全部コミコミ(お一人様)</p>
+                    <div class="panel__price-box">
+                      <p class="panel__price">¥10,000</p>
+                      <p class="panel__discount">¥8,000</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -332,7 +340,7 @@
           </div>
         </div>
         <div class="campaign__button">
-          <a href="#" class="campaign__link button"><span>View more</span></a>
+          <a href="#" class="button"><span>View more</span></a>
         </div>
       </div>
     </section>
@@ -364,7 +372,7 @@
             <div class="about__box">
               <p class="about__text text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
               <div class="about__button">
-                <a href="#" class="about__link button"><span>View more</span></a>
+                <a href="#" class="button"><span>View more</span></a>
               </div>
             </div>
           </div>
@@ -386,9 +394,9 @@
           </picture>
           <div class="information__box">
             <h3 class="information__heading">ライセンス講習</h3>
-            <div class="information__text text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</div>
+            <p class="information__text text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
             <div class="information__button">
-              <a href="#" class="information__link button"><span>View more</span></a>
+              <a href="#" class="button"><span>View more</span></a>
             </div>
           </div>
         </div>
@@ -438,7 +446,7 @@
           </a>
         </div>
         <div class="blog__button">
-          <a href="#" class="blog__link button"><span>View more</span></a>
+          <a href="#" class="button"><span>View more</span></a>
         </div>
       </div>
     </section>
@@ -489,7 +497,7 @@
           </a>
         </div>
         <div class="voice__button">
-          <a href="#" class="voice__link button"><span>View more</span></a>
+          <a href="#" class="button"><span>View more</span></a>
         </div>
       </div>
     </section>
@@ -571,14 +579,14 @@
             <div class="price__list price-list">
               <h3 class="price-list__title">スペシャルダイビング</h3>
               <dl class="price-list__items">
-                <dl class="price-list__item">
+                <div class="price-list__item">
                   <dt class="price-list__item-title">貸切ダイビング(2ダイブ)</dt>
                   <dd class="price-list__price">¥24,000</dd>
-                </dl>
-                <dl class="price-list__item">
+                </div>
+                <div class="price-list__item">
                   <dt class="price-list__item-title">1日ダイビング(3ダイブ)</dt>
                   <dd class="price-list__price">¥32,000</dd>
-                </dl>
+                </div>
               </dl>
             </div>
           </div>
@@ -616,7 +624,7 @@
             </div>
             <p class="contact-banner__text">ご予約・お問い合わせはコチラ</p>
             <div class="contact-banner__button">
-              <a href="#" class="contact-banner__link button"><span>Contact us</span></a>
+              <a href="#" class="button"><span>Contact us</span></a>
             </div>
           </div>
         </div>
