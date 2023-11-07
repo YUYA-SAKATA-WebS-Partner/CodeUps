@@ -31,27 +31,3 @@
   }
 }
 
-.sub-blog__main {
-  @include mq(md) {
-    width: 65.37%;
-  }
-}
-
-.sub-blog__cards.cards {
-  @include mq(md) {
-    grid-template-columns: repeat(2,1fr);
-    gap: myrem(79) myrem(40);
-  }
-}
-
-.sub-blog__sidebar {
-  margin-top: myrem(80);
-  @include mq(md) {
-    margin-top: 0;
-    width: 27.22%;
-  }
-}
-
-.sub-blog__pagenavi {
-  margin-top: myrem(80);
-}

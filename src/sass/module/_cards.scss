@@ -9,6 +9,13 @@
   }
 }
 
+.cards--2column {
+  @include mq(md) {
+    grid-template-columns: repeat(2,1fr);
+    gap: myrem(79) myrem(40);
+  }
+}
+
 .cards__item {
   display: flex;
   flex-direction: column;

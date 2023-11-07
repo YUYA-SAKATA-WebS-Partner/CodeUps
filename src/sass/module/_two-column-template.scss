@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.two-column-template__main {
+  @include mq(md) {
+    width: 65.37%;
+  }
+}
+
+.two-column-template__sidebar {
+  margin-top: myrem(80);
+  @include mq(md) {
+    margin-top: 0;
+    width: 27.22%;
+  }
+}
+
+.two-column-template__pagenavi {
+  margin-top: myrem(80);
+}

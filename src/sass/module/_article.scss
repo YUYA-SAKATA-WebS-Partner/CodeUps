@@ -23,7 +23,8 @@
   }
 }
 
-.article__image {
+.article__image,
+.article__body picture {
   display: block;
   margin-top: myrem(23);
   @include mq(md) {
@@ -31,7 +32,8 @@
   }
 }
 
-.article__image>img {
+.article__image>img,
+.article__body picture>img {
   aspect-ratio: 345 / 231;
   object-fit: cover;
   @include mq(md) {
@@ -39,30 +41,38 @@
   }
 }
 
-.article__text {
+.article__body p {
+  font-size: myrem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
   margin-top: myrem(24);
   @include mq(md) {
     margin-top: myrem(40);
   }
 }
 
-.article__lists {
+.article__body ul {
   margin-top: myrem(24);
   @include mq(md) {
     margin-top: myrem(40);
   }
 }
 
-.article__list {
+.article__body li {
   position: relative;
   padding-left: myrem(27);
+  font-size: myrem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $black;
 }
 
-.article__list:not(:first-child) {
+.article__body li:not(:first-child) {
   margin-top: myrem(4);
 }
 
-.article__list::before {
+.article__body li::before {
   content: "";
   position: absolute;
   top: 50%;

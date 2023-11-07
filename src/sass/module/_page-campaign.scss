@@ -23,6 +23,13 @@
   }
 }
 
+.page-campaign__tab {
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
 .page-campaign__body {
   margin-top: myrem(40);
 }

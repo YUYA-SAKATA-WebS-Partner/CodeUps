@@ -36,6 +36,10 @@
   }
 }
 
+.gallery__image {
+  cursor: pointer;
+}
+
 .gallery__image:nth-child(6n+1),
 .gallery__image:nth-child(6n+6) {
   @include mq(md) {

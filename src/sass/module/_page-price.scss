@@ -2,6 +2,9 @@
 
 .page-price__inner {
   position: relative;
+  @include mq(md) {
+    max-width: myrem(750);
+  }
 }
 
 .page-price__inner::before {

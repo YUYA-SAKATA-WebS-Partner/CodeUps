@@ -4,7 +4,6 @@
   @include mq(md) {
     display: flex;
     width: 100%;
-    max-width: myrem(700);
     margin: 0 auto;
   }
 }

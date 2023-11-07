@@ -2,9 +2,9 @@
 
 .sub-mainview {
   position: relative;
-  height: calc(100vh * calc(460 / 667));
+  height: myrem(460);
   @include mq(md) {
-    height: calc(100vh * calc(548 / 768));
+    height: myrem(548);
   }
 }
 
